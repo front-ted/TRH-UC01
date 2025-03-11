@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* Teste Soft Skills */
+.mostrar-resultado {
+    display: none;
+    border: 4px solid #0E4989;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+label.opt {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.opc {
+    background-color: #fff;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0;
+    transition: 400ms;
+    font-size: 17px;
+}
+
+.opc:hover {
+    background-color: #0E4989;
+    color: #fff;
+}
+
+.quiz {
+    border: 6px solid #E8E8E8;
+    border-left: 7px solid #E8E8E8;
+    border-top: 7px solid #E8E8E8;
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
+}
+
+.marcado {
+    background: #0E4989;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+/* Teste Soft Skills */
+
+
+@media screen and (max-width: 980px) {}
