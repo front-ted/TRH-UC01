@@ -46,7 +46,53 @@ label.opt {
     transition: all 0.4s;
 }
 
-/* Teste Soft Skills */
+.postit01 {
+    background: url("../img/postit01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 
+.postit02 {
+    background: url("../img/postit02.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.postit-titulo1 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 25pt;
+    text-align: center;
+    margin: 0;
+}
+
+.postit-titulo2 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 25pt;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.postit01,
+.postit02 p {
+    text-align: center;
+    margin-top: 5px;
+}
 
 @media screen and (max-width: 980px) {}
