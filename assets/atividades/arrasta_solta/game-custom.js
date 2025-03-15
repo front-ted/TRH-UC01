@@ -10,7 +10,14 @@ var containers = [
   document.querySelector("#slot-1"),
   document.querySelector('#slot-2'),
   document.querySelector('#slot-3'),
-  document.querySelector('#slot-4')
+  document.querySelector('#slot-4'),
+  document.querySelector('#slot-5'),
+  document.querySelector('#slot-6'),
+  document.querySelector('#slot-7'),
+  document.querySelector('#slot-8'),
+  document.querySelector('#slot-9'),
+  document.querySelector('#slot-10'),
+  document.querySelector('#slot-11')
 ];
 var audio = new Audio();
 var erro = 0;
