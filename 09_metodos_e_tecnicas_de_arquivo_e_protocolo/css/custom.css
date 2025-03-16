@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.bloco1 {
+    background-color: #b73061;
+}
+
+.bloco2 {
+    background-color: #0E4989;
+}
+
+.bloco3 {
+    background-color: #92ACCE;
+}
+
+.bloco4 {
+    background-color: #b73061;
+}
+
+@media screen and (max-width: 980px) {}
