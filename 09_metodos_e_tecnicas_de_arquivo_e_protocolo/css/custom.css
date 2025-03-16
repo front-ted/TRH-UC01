@@ -15,5 +15,7 @@
 .bloco4 {
     background-color: #b73061;
 }
-
+.texto-azul {
+    color: #0E4989;
+}
 @media screen and (max-width: 980px) {}
