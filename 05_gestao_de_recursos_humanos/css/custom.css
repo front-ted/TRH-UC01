@@ -1,2 +1,76 @@
 @charset "utf-8";
-@media screen and (max-width: 980px) {}
+
+.destaque-bg {
+    background: url("../img/destaque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
+}
+
+.destaque-bg p {
+    color: #ffffff;
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+}
+
+.list-group-item {
+    color: #b73061;
+    font-weight: bold;
+    border-color: #b73061;
+    border: 2px solid;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    background-color: #92ACCE;
+    color: #ffffff;
+}
+
+.accordion-body {
+    border-left: 3px solid #92ACCE;
+}
+
+.painel1 {
+    background: linear-gradient(to right, #92acce, #b73061);
+    border-radius: 150px;
+}
+
+.bt-painel1 {
+    margin: 5px;
+    width: 220px;
+    height: 70px;
+    padding: 0px 0px;
+}
+
+.bt-painel2 {
+    margin: 5px;
+    width: 220px;
+    height: 70px;
+    padding: 0px 0px;
+}
+
+.painel2 {
+    background: linear-gradient(to right, #0e4989, #b73061);
+    border-radius: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .bt-painel1 {
+        width: 155px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .destaque-bg {
+        background: url("../img/destaque_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .bt-painel1 {}
+}
