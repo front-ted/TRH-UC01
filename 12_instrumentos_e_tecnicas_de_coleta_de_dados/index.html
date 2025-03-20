@@ -82,8 +82,39 @@
                 <p>São elementos que, quando vistos isoladamente, não têm significado, ou seja, são fatos que compõem a
                     matéria-prima de uma informação, mas que têm pouco valor além de sua existência.</p>
                 <p>A classificação se dá da seguinte forma:</p>
-                <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                <h2>menu lateral ancorado</h2>
+                <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                <div class="row mb-5 no-print" aria-hidden="true">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="alfanumericos-list"
+                                data-bs-toggle="list" href="#alfanumericos" role="tab"
+                                aria-controls="alfanumericos">Dados alfanuméricos</a>
+                            <a class="list-group-item list-group-item-action" id="audio-list" data-bs-toggle="list"
+                                href="#audio" role="tab" aria-controls="audio">Dados de áudio</a>
+                            <a class="list-group-item list-group-item-action" id="imagem-list" data-bs-toggle="list"
+                                href="#imagem" role="tab" aria-controls="imagem">Dados de imagem</a>
+                            <a class="list-group-item list-group-item-action" id="video-list" data-bs-toggle="list"
+                                href="#video" role="tab" aria-controls="video">Dados de vídeo</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="alfanumericos" role="tabpanel"
+                                aria-labelledby="alfanumericos-list">
+                                <p>São representados por letras, números, cores, sinais e outros caracteres.</p>
+                            </div>
+                            <div class="tab-pane fade" id="audio" role="tabpanel" aria-labelledby="audio-list">
+                                <p>São os diferentes sons, ruídos e tons que podem ser ouvidos.</p>
+                            </div>
+                            <div class="tab-pane fade" id="imagem" role="tabpanel" aria-labelledby="imagem-list">
+                                <p>São as imagens e fotografias que podem ser vistas.</p>
+                            </div>
+                            <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-list">
+                                <p>São imagens em movimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="visually-hidden print">
                     <h5>Dados alfanuméricos</h5>
                     <p>São representados por letras, números, cores, sinais e outros caracteres.</p>
@@ -603,7 +634,41 @@
                     </div>
                 </div>
                 <p class="no-print" aria-hidden="true">Clique ou toque nas setas para visualizar o conteúdo.</p>
-                <h2>SLIDE SHOW</h2>
+                <div class="container-fluid no-print my-5" aria-hidden="true">
+                    <div class="splide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img class="card-img-top img-fluid d-block borda-colorida"
+                                            src="https://img.freepik.com/fotos-gratis/pessoa-segurando-uma-lampada-com-tampa-de-formatura_23-2148721299.jpg?w=996&t=st=1685554157~exp=1685554757~hmac=c18c78886b1ed5c18e8529895167467b4211203b3f2aad181f6e204927e8805d">
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img class="card-img-top img-fluid d-block borda-colorida"
+                                            src="https://img.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css-com-pessoa_23-2150062008.jpg?w=996&t=st=1685645138~exp=1685645738~hmac=12f77f929b7a9ed4229409f64044da02b3b2f182223fc1094b959fc9b7478318">
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img class="card-img-top img-fluid d-block borda-colorida"
+                                            src="https://img.freepik.com/fotos-gratis/empresarios-estao-fazendo-um-brainstorming_53876-137640.jpg?w=996&t=st=1685645200~exp=1685645800~hmac=04050646c62320e48cfec99d7a09e0d1cde9faa5cc625d82ff132724cc97a1ea">
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="visually-hidden print">
                     <figure class="my-5">
                         <div class="figure-img">
@@ -653,10 +718,205 @@
                     posterior análise.</p>
                 <p>Os principais instrumentos para a coleta de dados em uma organização são:</p>
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                <h2>painel gaitinha</h2>
+                <div class="accordion no-print my-5" id="accordionExample" aria-hidden="true">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Entrevista
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                            data-bs-parent="#accordionExample" style="">
+                            <div class="accordion-body">
+                                <p>Consiste na coleta e no registro de informações obtidas por perguntas verbais feitas
+                                    pelo
+                                    entrevistador. Em outras palavras, pode-se dizer que se trata de uma conversa
+                                    planejada.</p>
+                                <p>As entrevistas são classificadas em:</p>
+                                <ul>
+                                    <li><b>Entrevista estruturada</b> – É o diálogo em que o entrevistador dispõe de um
+                                        conjunto de
+                                        perguntas
+                                        padronizadas, com um conjunto estabelecido de respostas. Nesse modelo, o
+                                        entrevistador segue
+                                        um
+                                        roteiro previamente estabelecido, não sendo permitido adaptar as perguntas à
+                                        determinada
+                                        situação, inverter a ordem ou elaborar outras perguntas.</li>
+                                    <li><b>Entrevista não dirigida</b> – É o diálogo em que o entrevistador procura não
+                                        influir nos
+                                        comentários do entrevistado, deixando-o com total liberdade para encaminhar o
+                                        assunto. Nesse
+                                        modelo, o entrevistador tem liberdade para desenvolver cada situação em qualquer
+                                        direção.
+                                        Permite explorar mais amplamente uma questão.</li>
+                                    <li><b>Entrevista semiestruturada</b> – É um meio-termo entre os dois tipos
+                                        anteriores. Esse
+                                        método
+                                        consiste em perguntas parcialmente formuladas pelo pesquisador, apresentando
+                                        grande
+                                        flexibilidade, uma vez que permite aprofundar elementos que podem surgir durante
+                                        a
+                                        entrevista.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Questionário
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Consiste na coleta e no registro de informações obtidas por perguntas feitas por
+                                    escrito. As
+                                    respostas são registradas da mesma forma, no próprio questionário, e podem ser
+                                    respondidas sem a
+                                    presença do entrevistador.</p>
+                                <p>As questões desse instrumento podem ser classificadas como:</p>
+                                <ul>
+                                    <li><b>Questões abertas</b> – São aquelas em que o entrevistado tem a liberdade de
+                                        responder com
+                                        as
+                                        próprias palavras. Geralmente, questionários com perguntas abertas são os mais
+                                        difíceis de
+                                        tabular.</li>
+                                    <li><b>Questões fechadas</b> – São aquelas em que as possíveis respostas já estão
+                                        dispostas em
+                                        formato de
+                                        alternativas.</li>
+                                    <li><b>Questões mistas</b> – São aquelas que reúnem características tanto de
+                                        questões abertas
+                                        quanto
+                                        fechadas.</li>
+                                </ul>
+                                <p>A grande vantagem do questionário é a economia de tempo na sua aplicação, pois,
+                                    comparado à
+                                    entrevista, é um método muito mais rápido. Entretanto, não está livre de algumas
+                                    desvantagens,
+                                    como impossibilidade de explicar questões mal formuladas e grande número de questões
+                                    em branco.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Observação
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Consiste na coleta e no registro de informações obtidas por meio da observação
+                                    visual. O
+                                    observador pode captar várias situações que não são obtidas por meio de perguntas.
+                                    Nesse método,
+                                    deve ser preenchida uma ficha de observação para registrar os fenômenos observados.
+                                </p>
+                                <p>Esse método de coleta de dados pode ser classificado como:</p>
+                                <ul>
+                                    <li><b>Sistemático</b> – Quando os critérios a serem observados já estão planejados
+                                        e definidos.
+                                    </li>
+                                    <li><b>Não sistemático</b> – Quando não há critérios estabelecidos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Sociometria
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Também conhecida por sociograma, é um tipo de dinâmica de grupo que tem como objetivo
+                                    estimular
+                                    respostas sobre os pensamentos e sentimentos dos membros de um grupo.</p>
+                                <p>Desenvolvida pelo psicoterapeuta Jacob Levy Moreno, visa estudar as interações entre
+                                    as pessoas,
+                                    permitindo que o avaliador compreenda a posição social de cada elemento do grupo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Testes
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>São ferramentas que permitem a avaliação de conhecimentos. No âmbito organizacional,
+                                    o objetivo
+                                    da
+                                    sua aplicação consiste em obter uma informação mais segura sobre as capacidades do
+                                    profissional
+                                    selecionado. Os testes podem ser classificados em:</p>
+                                <ul>
+                                    <li><b>Testes de conhecimentos</b> – Servem para analisar o nível de conhecimento
+                                        teórico ou
+                                        prático de um
+                                        determinado candidato. Exemplos: provas de concurso, vestibular etc.</li>
+                                    <li><b>Testes de desempenho</b> – Servem para avaliar as habilidades e a capacidade
+                                        do candidato
+                                        na
+                                        realização de trabalhos específicos. Exemplos: testes de digitação, teste de
+                                        direção de
+                                        veículos,
+                                        montagem e desmontagem de equipamentos.</li>
+                                    <li><b>Testes psicológicos</b> – Servem para avaliar a disposição, o temperamento, a
+                                        personalidade e as
+                                        atitudes dos candidatos. Exemplos: testes psicométricos, testes de atenção
+                                        concentrada,
+                                        testes de
+                                        personalidade.</li>
+                                    <li><b>Testes de capacidade física</b> – Servem para avaliar as aptidões físicas dos
+                                        candidatos.
+                                        Exemplos:
+                                        testes de corrida, flexões, abdominais etc.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                História de vida
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>É um método de pesquisa que consiste na coleta de dados descritivos obtidos pelo
+                                    relato de
+                                    história de vida de um candidato. O ponto de vista do sujeito é o principal elemento
+                                    a ser
+                                    considerado. Essa modalidade é bastante utilizada em processos seletivos, pois
+                                    permite que o
+                                    avaliador obtenha informações detalhadas sobre a experiência e a perspectiva de vida
+                                    de uma
+                                    pessoa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="visually-hidden print">
-
-
                     <h5>Entrevista</h5>
                     <p>Consiste na coleta e no registro de informações obtidas por perguntas verbais feitas pelo
                         entrevistador. Em outras palavras, pode-se dizer que se trata de uma conversa planejada.</p>
@@ -678,8 +938,6 @@
                             flexibilidade, uma vez que permite aprofundar elementos que podem surgir durante a
                             entrevista.</li>
                     </ul>
-
-
                     <h5>Questionário</h5>
                     <p>Consiste na coleta e no registro de informações obtidas por perguntas feitas por escrito. As
                         respostas são registradas da mesma forma, no próprio questionário, e podem ser respondidas sem a
@@ -701,8 +959,6 @@
                         entrevista, é um método muito mais rápido. Entretanto, não está livre de algumas desvantagens,
                         como impossibilidade de explicar questões mal formuladas e grande número de questões em branco.
                     </p>
-
-
                     <h5>Observação</h5>
                     <p>Consiste na coleta e no registro de informações obtidas por meio da observação visual. O
                         observador pode captar várias situações que não são obtidas por meio de perguntas. Nesse método,
@@ -713,16 +969,11 @@
                         </li>
                         <li><b>Não sistemático</b> – Quando não há critérios estabelecidos.</li>
                     </ul>
-
-
                     <h5>Sociometria</h5>
                     <p>Também conhecida por sociograma, é um tipo de dinâmica de grupo que tem como objetivo estimular
                         respostas sobre os pensamentos e sentimentos dos membros de um grupo.</p>
                     <p>Desenvolvida pelo psicoterapeuta Jacob Levy Moreno, visa estudar as interações entre as pessoas,
                         permitindo que o avaliador compreenda a posição social de cada elemento do grupo.</p>
-
-
-
                     <h5>Testes</h5>
                     <p>São ferramentas que permitem a avaliação de conhecimentos. No âmbito organizacional, o objetivo
                         da
@@ -746,9 +997,6 @@
                             Exemplos:
                             testes de corrida, flexões, abdominais etc.</li>
                     </ul>
-
-
-
                     <h5>História de vida</h5>
                     <p>É um método de pesquisa que consiste na coleta de dados descritivos obtidos pelo relato de
                         história de vida de um candidato. O ponto de vista do sujeito é o principal elemento a ser
@@ -756,48 +1004,115 @@
                         avaliador obtenha informações detalhadas sobre a experiência e a perspectiva de vida de uma
                         pessoa.</p>
                 </div>
-
                 <p>A coleta de dados é uma importante atribuição do profissional de recursos humanos, pois transformar
                     os
                     dados em informações faz com que a organização consiga enxergar seus pontos fortes e os pontos a
                     serem
                     trabalhados, permitindo que ela estabeleça vantagem competitiva em relação aos seus concorrentes.
                 </p>
-
                 <p>Além disso, os sistemas de informação estão cada vez mais presentes nas empresas e, consequentemente,
                     na
                     gestão de RH, fornecendo subsídios nas atividades de planejamento, previsão de contratações,
                     necessidades de treinamento e desenvolvimento, descrição de cargos, elaboração e emissão de folha de
                     pagamentos, controle e mapeamento de competências, entre outras atividades pertinentes ao setor.</p>
-                <h2>Página 22</h2>
+                <p class="no-print">Agora, teste seus conhecimentos.</p>
+                <div class="box-atividade no-print">
+                    <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
+                    <p>Relacione o instrumento de coleta de dados à sua respectiva definição.</p>
+                    <div class="game-associar-colunas no-print nao-imprimir">
+                        <div class="row">
+                            <div class="col-12 col-sm-4 flexs itens">
+                                <button data-resp="1" class="item item1">
+                                    <p>Entrevista estruturada</p>
+                                </button>
 
+                                <button data-resp="2" class="item item2">
+                                    <p>Teste psicológico</p>
+                                </button>
 
+                                <button data-resp="3" class="item item3">
+                                    <p>Questões fechadas</p>
+                                </button>
 
+                            </div>
+                            <div class="col-12 col-sm-8 flexs">
+                                <button type="button" data-resp="1" class="resp resp1">
+                                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                                    <p>Conjunto de questões padronizadas.</p>
+                                </button>
 
+                                <button type="button" data-resp="2" class="resp resp2">
+                                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                                    <p>Avaliação de personalidade e comportamento.</p>
+                                </button>
 
+                                <button type="button" data-resp="3" class="resp resp3">
+                                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                                    <p>Respostas dispostas em forma de alternativa.</p>
+                                </button>
+                            </div>
+                        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        <!-- Modal -->
+                        <div class="modal fade associar_colunas_modal  no-print nao-imprimir"
+                            id="associar_colulas_errou" tabindex="-1" aria-labelledby="associarColunasErrou"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg"
+                                                    class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                                <p>Esta não é a definição correta para este tipo de coleta de dados.
+                                                    Tente novamente!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade associar_colunas_modal no-print nao-imprimir"
+                            id="associar_colulas_acertou" tabindex="-1" aria-labelledby="associarColunasAcertou"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg"
+                                                    class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                                <p>Parabéns! Está correto.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grafismo">
+                    <div class="destaque borda-colorida icone conclusao">
+                        <p>Ao longo deste conhecimento, foi possível entender os instrumentos e as técnicas de trabalho
+                            importantes para o profissional de RH. O intuito é que eles sirvam de base para a construção
+                            de uma jornada de empregabilidade.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Paginação-->

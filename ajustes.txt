@@ -111,7 +111,7 @@ tooltip
                     </div>
 
 
-
+ <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
 
 
 The Worst Person In The World
