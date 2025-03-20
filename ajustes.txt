@@ -11,14 +11,14 @@
                         </figure>
 
 
-<div class="row justify-content-center">
-                    <div class="col-6 d-flex justify-content-center">
+ <div class="row align-items-center justify-content-center">
+                            <div class="col-6 d-flex justify-content-center">
 
-                    </div>
-                    <div class="col-6 d-flex justify-content-center">
+                            </div>
+                            <div class="col-6 d-flex justify-content-center">
 
-                    </div>
-                </div>
+                            </div>
+                        </div>
 
 
 <div class="destaque gradiente icone atencao">
@@ -98,17 +98,7 @@ tooltip
 
 
 
-  <div class="row align-items-center justify-content-center">
-                        <div class="col-12 col-md-4">
-                          
-                        </div>
-                        <div class="col-12 col-md-4">
 
-                        </div>
-                        <div class="col-12 col-md-4">
-
-                        </div>
-                    </div>
 
 
  <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a> 
