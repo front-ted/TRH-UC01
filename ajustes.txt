@@ -2,13 +2,13 @@
                 </div>
 
 
-
-  <figure class="my-5">
-                            <div class="figure-img">
-                                <img class="img-fluid d-block mx-auto mb-4 print" src="elemento gráfico">
-                            </div>
-                            <figcaption class="figure-caption text-center"></figcaption>
-                        </figure>
+   <figure class="my-5">
+                        <div class="figure-img">
+                            <img class="img-fluid d-block mx-auto mb-4 print" src="elemento gráfico">
+                        </div>
+                        <figcaption class="figure-caption text-center"></figcaption>
+                        <div class="visually-hidden no-print"></div>
+                    </figure>
 
 
  <div class="row align-items-center justify-content-center">
@@ -21,61 +21,17 @@
                         </div>
 
 
-<div class="destaque gradiente icone atencao">
-                </div>
-
-
-
-
   <div class="grafismo">
                     <div class="destaque borda-colorida icone atencao">
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
- <div class="table-responsive table">
-                            <table class="text-left align-middle">
-                                <thead>
-                                    <tr>
-                                        <th class="w-25">Coluna 1</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Texto</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-
-
 
 tooltip
  <button type="button" class="bt-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title=""
                         data-bs-original-title="  " aria-hidden="true"></button>
 
 
-                        <div class="print visually-hidden">
-                          
-                        </div>
-
-
-
-
-
-
-
-
-
+                       
 
  <div class="table-responsive table">
                             <table class="text-left align-middle">
