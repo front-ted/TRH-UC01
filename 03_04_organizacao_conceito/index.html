@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="../assets/css/preloader.css">
     <!-- Áudio customizado -->
     <link rel="stylesheet" href="../assets/css/player.css">
+    <!--Atividade relacionar colunas-->
+    <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
@@ -1787,17 +1789,169 @@
                 </div>
                 <p>
                     Diante do contexto apresentado, fica evidenciado que o profissional de RH deve estar preparado para
-                    agregar nas organizações, por meio de ações próprias à sua função, executando atividades administrativas
+                    agregar nas organizações, por meio de ações próprias à sua função, executando atividades
+                    administrativas
                     nos processos pertinentes aos subsistemas que constituem essa área essencial, racionalizando e
-                    estruturando processos, a fim de agregar valor à sua função, refletindo positivamente em seu desempenho
+                    estruturando processos, a fim de agregar valor à sua função, refletindo positivamente em seu
+                    desempenho
                     e, consequentemente, nos resultados da empresa.
                 </p>
-                <p class="no-print">Quanto conteúdo bacana e necessário, não é mesmo? Agora, faça o que se pede a seguir.</p>
+                <p class="no-print">Quanto conteúdo bacana e necessário, não é mesmo? Agora, faça o que se pede a
+                    seguir.</p>
+                <div class="no-print">
+                    <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
+                        <p>Relacione as colunas a seguir de acordo com as respectivas definições. </p>
+                        <div class="game-associar-colunas no-print nao-imprimir">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 flexs itens">
+                                    <button data-resp="1" class="item item1">
+                                        <p>Organizações </p>
+                                    </button>
 
+                                    <button data-resp="2" class="item item2">
+                                        <p>Segundo setor </p>
+                                    </button>
 
+                                    <button data-resp="3" class="item item3">
+                                        <p>Simples Nacional </p>
+                                    </button>
 
+                                    <button data-resp="4" class="item item4">
+                                        <p>Organograma </p>
+                                    </button>
 
+                                    <button data-resp="5" class="item item5">
+                                        <p>Valores </p>
+                                    </button>
+                                </div>
+                                <div class="col-12 col-sm-8 flexs">
+                                    <button type="button" data-resp="1" class="resp resp1">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>São definidas como uma ou mais pessoas com o desejo e a disposição de
+                                            cooperar para o alcance de um objetivo comum. </p>
+                                    </button>
 
+                                    <button type="button" data-resp="2" class="resp resp2">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>É um sinônimo para empresas com fins lucrativos: organizações
+                                            intencionalmente constituídas para atender às necessidades de um determinado
+                                            e característico grupo de consumidores; produzem bens ou prestam serviços
+                                            com o objetivo maior de obtenção de lucro. </p>
+                                    </button>
+
+                                    <button type="button" data-resp="3" class="resp resp3">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>Foi criado com o intuito de simplificar e impulsionar micro e pequenos
+                                            empreendedores, visto que sua carga tributária, no total, é menor do que a
+                                            dos demais regimes. </p>
+                                    </button>
+
+                                    <button type="button" data-resp="4" class="resp resp4">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>É a representação gráfica da estrutura organizacional de uma empresa. </p>
+                                    </button>
+
+                                    <button type="button" data-resp="5" class="resp resp5">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>Devem ser capazes de traduzir a forma como a empresa se portará em relação
+                                            aos seus públicos interno e externo. </p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir"
+                                id="associar_colulas_errou" tabindex="-1" aria-labelledby="associarColunasErrou"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4">
+                                                    <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg"
+                                                        class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <p>Esta não é a definição correta para este termo. Tente novamente!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade associar_colunas_modal no-print nao-imprimir"
+                                id="associar_colulas_acertou" tabindex="-1" aria-labelledby="associarColunasAcertou"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4">
+                                                    <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg"
+                                                        class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <p>Parabéns! Está correto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <h2 id="titulo10">Processos organizacionais: conceito, inter-relação e fluxograma</h2>
+                <p>
+                    Quando se realiza alguma tarefa, rotineira ou não, antes de iniciá-la, estruturam-se, mesmo que
+                    informalmente, as etapas que a tornarão possível, certo? Além disso, pensa-se nas estratégias que
+                    ajudarão a concluir essa tarefa, não é verdade?
+                </p>
+                <p>
+                    O mesmo ocorre dentro das organizações; para que todas as atividades que compõem o processo
+                    produtivo
+                    sejam executadas, é necessário que, antes de tudo, sejam criados os processos e os procedimentos
+                    inerentes a cada etapa da produção ou da prestação do serviço, com o propósito de que seja possível
+                    executá-las de modo adequado.
+                </p>
+                <p>
+                    Porém, apenas executar tais funções de modo adequado é suficiente para garantir o desenvolvimento e
+                    o
+                    sucesso da empresa? Será que ter as atividades estruturadas de modo informal ou ter uma ou algumas
+                    pessoas dentro da empresa que saibam executá-las é suficiente para garantir que o processo produtivo
+                    da
+                    empresa se mantenha efetivo, gerando os resultados esperados ao longo do tempo?
+                </p>
+                <p>
+                    Para esclarecer esses questionamentos, os estudos serão direcionados aos <b>processos
+                        organizacionais</b>, que
+                    são os meios que permitem a transformação dos recursos, dos esforços e de toda a capacidade
+                    organizacional disponível na empresa, em produtos ou serviços com <b>qualidade, padronização e preço
+                        competitivo.</b>
+                </p>
+                <h3 id="titulo11">Conceito</h3>
+                <p>
+                    Conforme denomina Chiavenato (2014), “a empresa é um conjunto de processos básicos”, porque tais fluxos
+                    viabilizam a produção ou a prestação de serviços, mediante o desenvolvimento de várias atividades que se
+                    organizam por meio de processos que interagem entre si, atendendo às demandas e, consequentemente, aos
+                    objetivos das organizações.
+                </p>
+                <p>Tais processos podem ser classificados em três diferentes tipos:</p>
+                <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
 
 
 
@@ -1856,6 +2010,7 @@
     <script src="../assets/js/prognroll.min.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
+    <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
 
     <script>
         $(function () {
