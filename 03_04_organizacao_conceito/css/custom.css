@@ -71,6 +71,30 @@
     padding-top: 78%;
 }
 
+.img-zoom-efic::after {
+    content: url(../../assets/images/ico_visualizar.svg);
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: 0;
+    bottom: 0.5%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,7 +154,9 @@
         margin-top: -10%;
      }
 
-
+     .margem-texto{
+        margin-top: 5%;
+    }
 
 
 }
@@ -174,7 +200,9 @@
        margin-top: -21%;
     }
 
-
+    .margem-texto{
+        margin-top: 5%;
+    }
 
 
 }
