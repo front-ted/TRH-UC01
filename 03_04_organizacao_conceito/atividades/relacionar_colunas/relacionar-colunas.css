@@ -1,0 +1,192 @@
+.game-associar-colunas .itens,
+.game-associar-colunas02 .itens {
+    counter-reset: itens;
+}
+
+.game-associar-colunas button.item,
+.game-associar-colunas02 button.item02 {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    border-width: 3px;
+    border-style: solid;
+    font-weight: bold;
+    counter-increment: itens;
+    transition: all .4s;
+}
+
+.game-associar-colunas button.item:hover,
+.game-associar-colunas02 button.item02:hover,
+.game-associar-colunas button.selecionado,
+.game-associar-colunas02 button.selecionado,
+.resp:hover,
+.resp.selecionado,
+.resp02:hover,
+.resp02.selecionado {
+    color: #000 !important;
+    border-color: var(--cor-primaria);
+    background: #fff !important;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    cursor: pointer;
+}
+
+
+
+.game-associar-colunas button.item::before,
+.game-associar-colunas02 button.item02::before {
+    content: counter(itens, decimal);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 0 7px;
+}
+
+.item p,
+.item02 p {
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.game-associar-colunas button.item.acertou,
+.game-associar-colunas02 button.item02.acertou {
+    border: #008086;
+    background-color: #008086;
+    border-color: #008086;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+}
+
+.item.errou,
+.item02.errou {
+    border: #cd6667;
+    background-color: #cd6667;
+}
+
+.resp,
+.resp02 {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    transition: all .4s;
+    border-color: var(--cor-primaria);
+}
+
+.resp p,
+.resp02 p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+.resp.acertou,
+.resp02.acertou {
+    background-color: #008086;
+    color: #ffffff;
+    border: 3px solid #008086;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.47);
+}
+
+.resp.errou,
+.resp02.errou {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #cd6667;
+    border-color: #cd6667 !important;
+    color: #ffffff;
+}
+
+.resp.errou button,
+.resp.acertou button,
+.resp02.errou button,
+.resp02.acertou button {
+    color: white;
+}
+
+.resp.errou button,
+.resp02.errou button {
+    border-color: #fff !important;
+}
+
+.resp.acertou button,
+.resp02.acertou button {
+    border-color: #008086 !important;
+}
+
+.txtacao {
+    border: 0px;
+    padding: 0 7px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+
+
+.flexs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 3%;
+}
+
+/* cores */
+
+.carousel-indicators .indicador,
+.splide__pagination__page,
+.modal-body,
+.popover,
+.tab-content,
+.multipla-escolha button,
+.f-positivo,
+.f-negativo,
+.game-body .slot,
+.resp,
+.resp02 .bg-podcast {
+    border-color: var(--cor-primaria);
+}
+
+.carousel-indicators [data-bs-target].active,
+.splide__pagination__page.is-active,
+.game-associar-colunas button.item,
+.game-associar-colunas02 button.item02  {
+    border-color: var(--cor-primaria);
+    background: var(--cor-primaria);
+}
+
+.game-associar-colunas02 button.item02:hover::before,
+.game-associar-colunas02 button.selecionado,
+.game-associar-colunas02 button.selecionado::before,
+.txtacao {
+	border-color: var(--cor-primaria);
+	color: var(--cor-primaria);
+}

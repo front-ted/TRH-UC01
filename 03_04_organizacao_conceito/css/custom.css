@@ -216,11 +216,17 @@
     display: block;
 }
 
+.paragrafo-centralizado {
+    margin-top: 6%;
+}
 
+.figura-parag {
+    margin-left: 20%;
+}
 
-
-
-
+.figura-parag-2 {
+    margin-left: 20%;
+}
 
 
 
@@ -367,6 +373,13 @@
     .infografico-visoes {
         display: block;
     }
+
+    .figura-parag-2 {
+        margin-left: 11%;
+    }
+
+
+
 }
 
 
@@ -431,6 +444,9 @@
         display: block;
     }
 
+    .figura-parag-2 {
+        margin-left: 20%;
+    }
 
 
 
