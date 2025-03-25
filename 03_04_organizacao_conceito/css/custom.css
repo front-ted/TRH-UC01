@@ -292,8 +292,6 @@ body {
 }
 
 
-
-
 @media screen and (max-width:1440px) {
     body {
         background: url('../img/asset01.png') 100% 30%,
@@ -336,9 +334,6 @@ body {
         background-attachment: fixed;
     }
 }
-
-
-
 
 
 @media screen and (max-width:820px) {
@@ -454,15 +449,7 @@ body {
         margin-left: 11%;
     }
 
-
-
 }
-
-
-
-
-
-
 
 
 @media screen and (max-width:500px) {

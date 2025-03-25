@@ -1,5 +1,91 @@
 @charset "utf-8";
 
+
+body {
+    background: url('../img/asset_dir.png') 100% 70%,
+        url('../img/asset_esq.png') 0% 10%,
+        linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+}
+
+
+.infografico-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.info-vertical {
+    background: url('../img/01.png');
+    width: 811px;
+    height: 372px;
+    margin-bottom: 3%;
+}
+
+.texto-vertical {
+    padding-left: 50%;
+    padding-top: 10%;
+    padding-right: 2%;
+}
+
+.info-horizontal {
+    background: url('../img/02.png');
+    width: 811px;
+    height: 372px;
+    margin-bottom: 3%;
+}
+
+.texto-horizontal {
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-right: 45%;
+}
+
+.info-em-y {
+    background: url('../img/03.png');
+    width: 811px;
+    height: 372px;
+    margin-bottom: 3%;
+}
+
+.texto-em-y {
+    padding-left: 50%;
+    padding-top: 4%;
+    padding-right: 2%;
+}
+
+.info-paralelo {
+    background: url('../img/04.png');
+    width: 811px;
+    height: 372px;
+    margin-bottom: 3%;
+}
+
+.texto-paralelo {
+    padding-left: 3%;
+    padding-top: 9%;
+    padding-right: 45%;
+}
+
+.infografico-mob {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Teste Soft Skills */
 .mostrar-resultado {
     display: none;
@@ -95,4 +181,210 @@ label.opt {
     margin-top: 5px;
 }
 
+
+
+.bg-escuro .bt-tooltip {
+    color: #fff;
+}
+
+.bg-escuro .tab-content p {
+    color: #fff;
+}
+
+.bg-escuro .figure-caption {
+    color: #fff;
+}
+
+.bg-escuro .tab-content li {
+    color: #fff;
+}
+
+.bg-escuro .postit01 p{
+    color: #000;
+}
+
+.bg-escuro .postit02 p{
+    color: #000;
+}
+
+.bg-escuro .modal-body p {
+    color: #000;
+}
+
+.bg-escuro .modal-body li {
+    color: #000;
+}
+
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    body {
+        background:
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
 @media screen and (max-width: 980px) {}
+
+
+
+
+
+@media screen and (max-width: 820px) {
+
+
+    .infografico-mob {
+        display: none;
+    }
+
+    .infografico-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .info-vertical {
+        background: url('../img/01_700.png');
+        width: 700px;
+        height: 321px;
+        margin-bottom: 3%;
+    }
+
+    .info-horizontal {
+        background: url('../img/02_700.png');
+        width: 700px;
+        height: 321px;
+        margin-bottom: 3%;
+    }
+
+    .info-em-y {
+        background: url('../img/03_700.png');
+        width: 700px;
+        height: 321px;
+        margin-bottom: 3%;
+    }
+
+    .info-paralelo {
+        background: url('../img/04_700.png');
+        width: 700px;
+        height: 321px;
+        margin-bottom: 3%;
+    }
+
+    .texto-vertical {
+        padding-left: 47%;
+        padding-top: 4%;
+        padding-right: 2%;
+    }
+
+    .texto-em-y {
+        padding-left: 47%;
+        padding-top: 2%;
+        padding-right: 1%;
+    }
+
+    .texto-paralelo {
+        padding-left: 3%;
+        padding-top: 9%;
+        padding-right: 47%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .texto-vertical {
+        padding-left: 47%;
+        padding-top: 9%;
+        padding-right: 2%;
+    }
+
+    .texto-horizontal {
+        padding-left: 3%;
+        padding-top: 8%;
+        padding-right: 45%;
+    }
+
+    .texto-em-y {
+        padding-left: 47%;
+        padding-top: 7%;
+        padding-right: 1%;
+    }
+
+    .infografico-mob {
+        display: none;
+    }
+
+    .infografico-2 {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .info-vertical-mob,
+    .info-horizontal-mob,
+    .info-em-y-mob,
+    .info-paralolo-mob {
+        background: unset;
+        width: unset;
+        height: unset;
+        margin-bottom: 2%;
+    }
+
+    .infografico-mob {
+        display: block;
+    }
+
+    .infografico-2 {
+        display: none;
+    }
+
+    .postit02 {
+        margin-top: 3%;
+    }
+
+    .caixa-1 {
+        margin-top: -20%;
+    }
+
+    .caixa-2 {
+        margin-top: -30%;
+        height: 520px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
