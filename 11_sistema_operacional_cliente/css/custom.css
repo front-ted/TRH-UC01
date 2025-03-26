@@ -1,2 +1,115 @@
 @charset "utf-8";
-@media screen and (max-width: 980px) {}
+
+body {
+    background: url('../img/asset01.png') 100% 30%,
+        url('../img/asset02.png') 0% 90%,
+        linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+}
+
+.painel1 {
+    background: url('../img/painel.png');
+    background-repeat: no-repeat;
+    width: 768px;
+    height: 627px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-painel1 {
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.bt1-painel1 {
+    width: 127px;
+    height: 157px;
+    background: url('../img/bt01.png');
+    background-repeat: no-repeat;
+}
+
+.bt2-painel1 {
+    width: 126px;
+    height: 156px;
+    background: url('../img/bt02.png');
+    background-repeat: no-repeat;
+}
+
+.bt3-painel1 {
+    width: 126px;
+    height: 156px;
+    background: url('../img/bt03.png');
+    background-repeat: no-repeat;
+}
+
+.bt4-painel1 {
+    width: 126px;
+    height: 158px;
+    background: url('../img/btt04.png');
+    background-repeat: no-repeat;
+}
+
+.bt5-painel1 {
+    width: 141px;
+    height: 180px;
+    background: url('../img/bt05.png');
+    background-repeat: no-repeat;
+}
+
+.bt-painel1:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .painel1 {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .bt-painel1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
