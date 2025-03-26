@@ -218,13 +218,6 @@ body {
     padding-right: 28%;
 }
 
-.infografico-visoes-mob {
-    display: none;
-}
-
-.infografico-visoes {
-    display: block;
-}
 
 .paragrafo-centralizado {
     margin-top: 6%;
@@ -437,13 +430,6 @@ body {
         display: block;
     }
 
-    .infografico-visoes-mob {
-        display: none;
-    }
-
-    .infografico-visoes {
-        display: block;
-    }
 
     .figura-parag-2 {
         margin-left: 11%;
@@ -499,16 +485,40 @@ body {
         display: none;
     }
 
-    .infografico-visoes {
-        display: none;
-    }
-
-    .infografico-visoes-mob {
-        display: block;
-    }
-
     .figura-parag-2 {
         margin-left: 20%;
+    }
+
+    .info-bndes,
+    .info-itau {
+        margin-left: unset;
+    }
+
+    .infografico-visoes {
+        transform: scale(0.5);
+        margin-top: -61%;
+        margin-left: -36%;
+        margin-bottom: -57%;
+    }
+
+    .infografico-visoes p {
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+
+    .info-bndes,
+    .info-itau {
+        margin-left: unset;
+    }
+
+    .infografico-2 {
+        display: none;
+    }
+    .infografico-mob{
+        display: block;
     }
 
 }
