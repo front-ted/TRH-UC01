@@ -16,9 +16,16 @@
     background-attachment: fixed !important;
 }
 
+.bloco1,
 .bloco2 {
     background:
         linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    background-size: cover;
+}
+
+.bloco3 {
+    background:
+        linear-gradient(to bottom right, #dce6f9, #fff);
     background-size: cover;
 }
 
@@ -68,11 +75,134 @@
     justify-items: center;
 }
 
+.margem-texto {
+    margin-top: 11%;
+}
 
 .bg-escuro .flip-card-back p {
     color: #000;
 }
 
+.painel1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.botao-jornada,
+.botao-custo,
+.botao-efic,
+.botao-ambiente {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-relogio {
+    position: absolute;
+    top: 48%;
+    left: -30%;
+    transform: translateY(-50%);
+    width: 182px;
+    height: 183px;
+}
+
+.botao-j {
+    width: 330px;
+    height: 150px;
+    padding-left: 24%;
+    border-radius: 63px;
+}
+
+.imagem-custo {
+    position: absolute;
+    top: 48%;
+    left: -30%;
+    transform: translateY(-50%);
+    width: 182px;
+    height: 183px;
+}
+
+.botao-c {
+    width: 330px;
+    height: 150px;
+    padding-left: 24%;
+    border-radius: 63px;
+}
+
+.imagem-efic {
+    position: absolute;
+    top: 48%;
+    left: -30%;
+    transform: translateY(-50%);
+    width: 182px;
+    height: 183px;
+}
+
+.botao-ef {
+    width: 330px;
+    height: 150px;
+    padding-left: 24%;
+    border-radius: 63px;
+}
+
+.imagem-ambiente {
+    position: absolute;
+    top: 48%;
+    left: -30%;
+    transform: translateY(-50%);
+    width: 182px;
+    height: 183px;
+}
+
+.botao-amb {
+    width: 330px;
+    height: 150px;
+    padding-left: 24%;
+    border-radius: 63px;
+}
+
+
+.bg-escuro .accordion-body p {
+    color: #fff;
+}
+
+.bg-escuro .modal-body p {
+    color: #000;
+}
+
+.bg-escuro .modal-body .figure-caption {
+    color: #000;
+}
+
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .modal-body li {
+    color: #000;
+}
+
+.bg-escuro td {
+    background-color: #fff;
+}
+
+.bg-escuro table td {
+    color: #000 !important;
+}
+
+
+.bg-escuro table * {
+    color: #000 !important;
+}
+
+
+.table>:not(:first-child) {
+    border-top: none;
+}
 
 
 
@@ -127,14 +257,24 @@
         transform: scale(0.7);
     }
 
-    .itens-2 p{
+    .itens-2 p {
         font-size: 1.1em;
     }
-    .itens-3 p{
+
+    .itens-3 p {
         font-size: 1.1em;
+    }
+
+    .margem-texto {
+        margin-top: 8%;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .margem-texto {
+        margin-top: 12%;
+    }
+}
 
 
 
@@ -154,6 +294,37 @@
         align-items: center;
         justify-items: center;
         transform: unset;
+    }
+
+    .margem-texto {
+        margin-top: -5%;
+    }
+
+    .botao-jornada,
+    .botao-ambiente,
+    .botao-efic,
+    .botao-custo {
+        transform: scale(0.85);
+        margin-left: 20%;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .botao-jornada,
+    .botao-ambiente,
+    .botao-efic,
+    .botao-custo {
+        transform: scale(0.75);
+        margin-left: 20%;
     }
 
 }
