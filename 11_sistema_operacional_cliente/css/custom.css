@@ -1,5 +1,26 @@
 @charset "utf-8";
 
+/* html {
+    background: #dce6f9;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background:
+        url('../img/asset01.png') 100% 30%,
+        url('../img/asset02.png') 0% 90%,
+        linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, scroll;
+    background-size: auto, auto, auto;
+    height: 100%;
+} */
+html {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background: url('../img/asset01.png') 100% 30%,
         url('../img/asset02.png') 0% 90%,
@@ -8,21 +29,35 @@ body {
     background-attachment: fixed, fixed, fixed;
 }
 
+/* INICIO PAINEL 1 */
 .painel1 {
     background: url('../img/painel.png');
     background-repeat: no-repeat;
     width: 768px;
     height: 627px;
     display: flex;
-    align-content: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.painel1 .topo-bt-painel1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.painel1 .fundo-bt-painel1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     align-items: center;
 }
 
 .bt-painel1 {
     border: none;
-    margin-left: 5px;
-    margin-right: 5px;
     transition: transform 0.3s ease;
 }
 
@@ -48,15 +83,15 @@ body {
 }
 
 .bt4-painel1 {
-    width: 126px;
-    height: 158px;
+    width: 141px;
+    height: 180px;
     background: url('../img/btt04.png');
     background-repeat: no-repeat;
 }
 
 .bt5-painel1 {
-    width: 141px;
-    height: 180px;
+    width: 126px;
+    height: 158px;
     background: url('../img/bt05.png');
     background-repeat: no-repeat;
 }
@@ -65,51 +100,93 @@ body {
     transform: scale(1.1);
 }
 
+/* FIM PAINEL 1 */
 
+/* INICIO TABELAS */
+table {
+    background-color: #fff;
+    border-radius: 20px;
+}
 
+thead {
+    background: linear-gradient(to right, #92ACCE, #004788);
+    color: #fff;
+    text-align: center;
+}
 
+thead th {
+    border-right: unset;
+}
 
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-width: 2px;
+    border-color: #92ACCE;
+}
 
+.table>:not(:first-child) {
+    border-top: none !important;
+    margin-top: 10px;
+}
 
+thead th {
+    border-right: 2px solid #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FIM ELIPSE TABELAS */
 @media screen and (max-width: 768px) {
     .painel1 {
+        position: relative;
+        right: 30px;
+        scale: 0.9;
+    }
+
+    body {
+        background:
+            none,
+            none,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .painel1 {
         background: none;
+        background-repeat: unset;
+        width: 115%;
+        height: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: unset;
+    }
+
+    .painel1 .topo-bt-painel1 {
+        display: flex;
+        width: 100%;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-content: center;
         justify-content: center;
         align-items: center;
-        background-repeat: no-repeat;
-        height: 100%;
+    }
+
+    .painel1 .fundo-bt-painel1 {
+        display: flex;
         width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .bt-painel1 {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
