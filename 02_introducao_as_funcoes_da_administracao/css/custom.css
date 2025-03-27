@@ -8,27 +8,22 @@
 }
 
 
-
-
 .bloco2 {
-    background: url('../img/asset_dir.png') 100% 70%,
-        url('../img/asset_esq.png') 0% 10%;
+    background: url('../img/asset02.png') 100% 10%,
+        #fff;
     background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed, fixed;
+    filter: drop-shadow(3px 3px 2px rgba(112, 112, 112, 0.75));
+    border-radius: 45px;
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .bloco3 {
-    background: url('../img/asset_dir.png') 100% 70%,
-        url('../img/asset_esq.png') 0% 10%,
+    background: url('../img/asset03.png') 0% 10%,
         linear-gradient(to bottom, #f8dcec, #dce6f9);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-attachment: fixed, fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
 }
 
-
-.bloco4 {
-    background-color: #b73061;
-}
 
 .infografico-funcoes {
     display: flex;
@@ -152,31 +147,180 @@
 }
 
 
+.infografico-planejamento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-oque {
+    background: url('../img/info02_01.png');
+    width: 640px;
+    height: 286px;
+    margin-bottom: 3%;
+}
+
+.texto-oque {
+    padding-left: 30%;
+    padding-top: 5%;
+    padding-right: 2%;
+}
+
+.info-como {
+    background: url('../img/info02_02.png');
+    width: 646px;
+    height: 235px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+.texto-como {
+    padding-left: 4%;
+    padding-top: 8%;
+    padding-right: 29%;
+}
+
+.info-onde {
+    background: url('../img/info02_03.png');
+    width: 640px;
+    height: 239px;
+    margin-bottom: 3%;
+}
+
+.texto-onde {
+    padding-left: 30%;
+    padding-top: 7%;
+    padding-right: 2%;
+}
+
+.info-comque {
+    background: url('../img/info02_04.png');
+    width: 646px;
+    height: 216px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+.texto-comque {
+    padding-left: 4%;
+    padding-top: 11%;
+    padding-right: 28%;
+}
+
+.infografico-planejamento li {
+    color: #fff;
+}
 
 
+.painel2 {
+    height: 500px;
+}
 
+.botao-planejamento {
+    background: url('../img/painel02_01.png') no-repeat;
+    width: 330px;
+    height: 253px;
+    border: none;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 25%;
+}
 
+.botao-planejamento:hover {
+    transform: scale(1.1);
+}
 
+.botao-org {
+    background: url('../img/painel02_02.png') no-repeat;
+    width: 254px;
+    height: 330px;
+    border: none;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 48%;
+}
 
+.botao-org:hover {
+    transform: scale(1.1);
+}
 
+.botao-direcao {
+    background: url('../img/painel02_03.png') no-repeat;
+    width: 331px;
+    height: 253px;
+    border: none;
+    position: absolute;
+    margin-top: 25.1%;
+    margin-left: 39.9%;
+}
 
+.botao-direcao:hover {
+    transform: scale(1.1);
+}
 
+.botao-controle {
+    background: url('../img/painel02_04.png') no-repeat;
+    width: 253px;
+    height: 331px;
+    border: none;
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 25%;
+}
 
+.botao-controle:hover {
+    transform: scale(1.1);
+}
 
+.bg-escuro .infografico-funcoes li {
+    color: #000;
+}
+
+.bg-escuro .accordion-body p {
+    color: #fff;
+}
+
+.bg-escuro .modal-body p {
+    color: #000;
+}
+
+.bg-escuro .modal-body li {
+    color: #000;
+}
+
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .tab-content p {
+    color: #fff;
+}
+
+.bg-escuro .figure-caption {
+    color: #fff;
+}
+
+.bg-escuro .tab-content li {
+    color: #fff;
+}
 
 
 
 @media screen and (max-width: 1024px) {
-    .bloco1 {
+    .bloco1, .bloco3 {
         background:
             linear-gradient(to bottom right, #dce6f9, #f8dcec);
         background-size: cover;
     }
 
     .bloco2 {
-        background: unset;
+        background: #fff;
+        background-repeat: no-repeat, no-repeat;
+        filter: drop-shadow(3px 3px 2px rgba(112, 112, 112, 0.75));
+        border-radius: 45px;
+        margin-top: -9%;
+        margin-bottom: -5%;
     }
-
 
 
 
@@ -238,6 +382,43 @@
         margin-left: 16%;
     }
 
+    .infografico-planejamento {
+        transform: scale(0.85);
+        margin-top: -5%;
+        margin-left: -5%;
+        margin-bottom: -2%;
+    }
+
+
+    .botao-planejamento {
+        margin-top: 2%;
+        margin-left: 16%;
+    }
+
+    .botao-org {
+        margin-top: 2%;
+        margin-left: 43%;
+    }
+
+    .botao-direcao {
+        margin-top: 29%;
+        margin-left: 33.8%;
+    }
+
+    .botao-controle {
+        margin-top: 19.5%;
+        margin-left: 16%;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -268,6 +449,70 @@
         margin-top: 20.4%;
         margin-left: 16%;
     }
+
+    .infografico-planejamento {
+        transform: scale(0.8);
+        margin-top: -12%;
+        margin-left: -9%;
+        margin-bottom: -8%;
+    }
+
+    .infografico-planejamento li {
+        font-size: 1.1em;
+    }
+
+    .texto-oque {
+        padding-left: 30%;
+        padding-top: 3%;
+        padding-right: 2%;
+    }
+
+    .texto-como {
+        padding-left: 4%;
+        padding-top: 4%;
+        padding-right: 29%;
+    }
+
+    .texto-onde {
+        padding-left: 30%;
+        padding-top: 4%;
+        padding-right: 2%;
+    }
+
+    .texto-comque {
+        padding-left: 4%;
+        padding-top: 9%;
+        padding-right: 28%;
+    }
+
+
+    .botao-org {
+        margin-top: 2%;
+        margin-left: 44.5%;
+    }
+
+    .botao-direcao {
+        margin-top: 30.7%;
+        margin-left: 34.5%;
+    }
+
+    .botao-controle {
+        margin-top: 20.4%;
+        margin-left: 16%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -320,6 +565,104 @@
         margin-left: 17.2%;
     }
 
+    .infografico-planejamento {
+        transform: scale(0.58);
+        margin-top: -61%;
+        margin-left: -27%;
+        margin-bottom: -57%;
+    }
+
+    .infografico-planejamento li {
+        font-size: 1.05em;
+    }
+
+    .info-como,
+    .info-comque {
+        margin-left: unset;
+    }
+
+    .texto-oque {
+        padding-left: 30%;
+        padding-top: 4%;
+        padding-right: 2%;
+    }
+
+    .texto-como {
+        padding-left: 4%;
+        padding-top: 7%;
+        padding-right: 31%;
+    }
+
+    .texto-onde {
+        padding-left: 30%;
+        padding-top: 5%;
+        padding-right: 2%;
+    }
+
+    .texto-comque {
+        padding-left: 4%;
+        padding-top: 9%;
+        padding-right: 30%;
+    }
+
+    .botao-planejamento {
+        margin-top: -28%;
+        margin-left: -24%;
+    }
+
+    .botao-org {
+        margin-top: -28%;
+        margin-left: 39%;
+    }
+
+    .botao-controle {
+        margin-top: 13%;
+        margin-left: -24%;
+    }
+
+    .botao-direcao {
+        margin-top: 35.2%;
+        margin-left: 17.2%;
+    }
+
+
+    .painel2 {
+        transform: scale(0.7);
+        margin-left: 5%;
+        height: 350px;
+    }
+
+    .botao-planejamento {
+        margin-top: -28%;
+        margin-left: -24%;
+    }
+
+    .botao-org {
+        margin-top: -28%;
+        margin-left: 39%;
+    }
+
+    .botao-controle {
+        margin-top: 13%;
+        margin-left: -24%;
+    }
+
+    .botao-direcao {
+        margin-top: 35.2%;
+        margin-left: 17.2%;
+    }
+
+
+    .bloco2 {
+        background: #fff;
+        background-repeat: no-repeat, no-repeat;
+        filter: drop-shadow(3px 3px 2px rgba(112, 112, 112, 0.75));
+        border-radius: 45px;
+        margin-top: -9%;
+        margin-bottom: -8%;
+    }
+
+
 
 
 
@@ -345,6 +688,34 @@
         margin-top: 15%;
         margin-left: -24%;
     }
+
+
+    .infografico-planejamento {
+        transform: scale(0.55);
+        margin-top: -61%;
+        margin-left: -28%;
+        margin-bottom: -57%;
+    }
+
+    .infografico-planejamento li {
+        font-size: 1.07em;
+    }
+
+    .botao-org {
+        margin-top: -28%;
+        margin-left: 42%;
+    }
+
+    .botao-direcao {
+        margin-top: 38.2%;
+        margin-left: 18.9%;
+    }
+
+    .botao-controle {
+        margin-top: 15%;
+        margin-left: -24%;
+    }
+
 
 }
 
@@ -389,6 +760,78 @@
         margin-left: -24%;
     }
 
+    .info-como,
+    .info-comque {
+        margin-left: unset;
+    }
+
+    .infografico-planejamento {
+        transform: scale(0.48);
+        margin-top: -87%;
+        margin-left: -31%;
+        margin-bottom: -74%;
+    }
+
+    .infografico-planejamento li {
+        font-size: 1.12em;
+    }
+
+    .texto-oque {
+        padding-left: 29%;
+        padding-top: 3%;
+        padding-right: 1%;
+    }
+
+    .texto-como {
+        padding-left: 4%;
+        padding-top: 4%;
+        padding-right: 29%;
+    }
+
+
+    .texto-onde {
+        padding-left: 30%;
+        padding-top: 5%;
+        padding-right: 2%;
+    }
+
+    .texto-comque {
+        padding-left: 4%;
+        padding-top: 9%;
+        padding-right: 28%;
+    }
+
+
+
+    .painel2 {
+        transform: scale(0.7);
+        margin-left: unset;
+        height: 350px;
+    }
+
+    .botao-org {
+        margin-top: -28%;
+        margin-left: 43%;
+    }
+
+    .botao-direcao {
+        margin-top: 39.2%;
+        margin-left: 19.8%;
+    }
+
+    .botao-controle {
+        margin-top: 15%;
+        margin-left: -24%;
+    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -414,9 +857,27 @@
         margin-left: -24%;
     }
 
+    .infografico-planejamento {
+        transform: scale(0.49);
+        margin-top: -87%;
+        margin-left: -34%;
+        margin-bottom: -74%;
+    }
 
+    .botao-org {
+        margin-top: -28%;
+        margin-left: 46%;
+    }
 
+    .botao-direcao {
+        margin-top: 42.2%;
+        margin-left: 21.5%;
+    }
 
+    .botao-controle {
+        margin-top: 17%;
+        margin-left: -24%;
+    }
 
 
 }
