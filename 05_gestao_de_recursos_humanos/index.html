@@ -67,11 +67,9 @@
                     atribuições e responsabilidades</h2>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-6 d-flex justify-content-center">
-                        <figure class="my-5">
-                            <div class="figure-img">
-                                <img class="img-fluid d-block mx-auto mb-4 print" src="img/figura.jpg">
-                            </div>
-                        </figure>
+                        <div class="figure-img">
+                            <img class="img-fluid d-block mx-auto mb-4 no-print destaque-img" src="img/figura.jpg">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-center">
                         <p>Este conhecimento é um ponto de partida essencial para compreender os elementos fundamentais
@@ -95,7 +93,6 @@
                             recursos e passaram a percebê-las como parceiros internos.</p>
                     </div>
                 </div>
-
                 <p>O que antes era conhecido como <b>administração de recursos humanos</b> (ARH), com o tempo, passou a
                     se
                     chamar <b>gestão de pessoas</b> (GP) e, posteriormente, foi chamado de <b>gestão de talentos</b>.
@@ -103,9 +100,14 @@
                     refletem não apenas uma transformação terminológica, mas uma evolução fundamental na maneira como as
                     organizações percebem e valorizam o potencial humano, conforme você verá a seguir:</p>
                 <figure class="my-5">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="img/img1.jpg">
-                    </div>
+                    <img src="img/img1.jpg"
+                        class="img-fluid d-block mx-auto mb-3 d-none d-sm-none d-md-block d-lg-block radius destaque-img2 print"
+                        alt="Imagem">
+                    <a href="img/img1.jpg" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                        <img src="img/img1.jpg"
+                            class="img-fluid d-block mx-auto mb-3 d-sm-block d-md-none d-lg-none radius destaque-img2"
+                            alt="Imagem">
+                    </a>
                     <figcaption class="figure-caption text-center">
                         Saltos gradativos da área de RH
                         <br>
@@ -816,16 +818,16 @@
                     essas práticas? Afinal, você, como futuro técnico em recursos humanos, em algum momento desempenhará
                     essas funções.</p>
                 <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                <div class="painel1 no-print my-5" aria-hidden="true">
+                <div class="painel1 no-print" aria-hidden="true">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-12 col-md-4">
                             <figure>
                                 <div class="figure-img">
-                                    <img class="img-fluid d-block mx-auto mb-4 print" src="img/painel1_persona.png">
+                                    <img class="img-fluid d-block mx-auto no-print" src="img/painel1_persona.png">
                                 </div>
                             </figure>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 botoes-1">
                             <button type="button" class="botao bt-painel1" data-bs-toggle="modal"
                                 data-bs-target="#painel1-modal1">Recrutamento e seleção</button>
                             <button type="button" class="botao bt-painel1" data-bs-toggle="modal"
@@ -837,7 +839,7 @@
                                 data-bs-target="#painel1-modal4">Cargos e
                                 salários</button>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 botoes-2">
                             <button type="button" class="botao bt-painel1" data-bs-toggle="modal"
                                 data-bs-target="#painel1-modal5">Segurança e saúde no trabalho</button>
                             <button type="button" class="botao bt-painel1" data-bs-toggle="modal"
@@ -1262,28 +1264,59 @@
                     <button type="button" class="botao" data-bs-toggle="modal" data-bs-target="#painel2-modal4">Promover
                         um bom clima organizacional</button>
                 </div> -->
-                <div class="painel2 no-print my-5" aria-hidden="true">
+                <div class="painel2-desk no-print my-5" aria-hidden="true">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-12 col-md-4">
-                            <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
-                                data-bs-target="#painel2-modal1">Ser o
-                                exemplo</button>
-                            <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
-                                data-bs-target="#painel2-modal2">Ser
-                                assertivo</button>
-                            <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
-                                data-bs-target="#painel2-modal3">Reduzir
-                                indicadores negativos</button>
-                            <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
-                                data-bs-target="#painel2-modal4">Promover
-                                um bom clima organizacional</button>
+                            <div class="botoes-painel2">
+                                <div class="botoes-espaco">
+                                    <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                        data-bs-target="#painel2-modal1">Ser o
+                                        exemplo</button>
+                                    <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                        data-bs-target="#painel2-modal2">Ser
+                                        assertivo</button>
+                                    <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                        data-bs-target="#painel2-modal3">Reduzir
+                                        indicadores negativos</button>
+                                    <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                        data-bs-target="#painel2-modal4">Promover
+                                        um bom clima organizacional</button>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-12 col-md-4">
+                            <figure>
+                                <div class="figure-img">
+                                    <img class="img-fluid d-block mx-auto mb-4 no-print" src="img/painel2_persona.png">
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="painel2-mob no-print my-5" aria-hidden="true">
+                    <div class="row align-items-center justify-content-center">
                         <div class="col-12 col-md-4">
                             <figure>
                                 <div class="figure-img">
                                     <img class="img-fluid d-block mx-auto mb-4 print" src="img/painel2_persona.png">
                                 </div>
                             </figure>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="botoes-mob2">
+                                <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                    data-bs-target="#painel2-modal1">Ser o
+                                    exemplo</button>
+                                <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                    data-bs-target="#painel2-modal2">Ser
+                                    assertivo</button>
+                                <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                    data-bs-target="#painel2-modal3">Reduzir
+                                    indicadores negativos</button>
+                                <button type="button" class="botao bt-painel2" data-bs-toggle="modal"
+                                    data-bs-target="#painel2-modal4">Promover
+                                    um bom clima organizacional</button>
+                            </div>
                         </div>
                     </div>
                 </div>
