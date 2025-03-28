@@ -25,17 +25,12 @@
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
     <link rel="stylesheet" href="../assets/css/template.css">
-    <!-- Atividade de verdadeiro ou falso -->
     <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
-    <!--Atividade arrasta e solta-->
     <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
     <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
-    <!--Atividade relacionar colunas-->
     <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
-    <!--Atividade jogo da memória-->
     <link rel="stylesheet" href="../assets/atividades/jogo_memoria/jogoMemoria.css">
     <link rel="stylesheet" href="css/custom.css">
-
 </head>
 
 <body class="bg-claro">
@@ -701,15 +696,20 @@
                     </div>
                 </div>
                 <p class="no-print" aria-hidden="true">Clique ou toque nas setas para visualizar o conteúdo.</p>
-                <div class="container-fluid no-print my-5" aria-hidden="true">
+                <div class="container-fluid no-print slide-novo" aria-hidden="true">
                     <div class="splide" role="group">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide01.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide01.png">
+                                        <a href="img/slide01.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide01.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 1:</b> crie uma tabela com os dados que você
+                                            <p class="card-text d-none d-md-block"><b>Passo 1:</b> crie uma tabela com
+                                                os dados que você
                                                 quer visualizar no gráfico. Ex.: fazer um
                                                 comparativo
                                                 entre as contratações e as demissões do primeiro semestre de 2016.</p>
@@ -718,18 +718,28 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide02.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide02.png">
+                                        <a href="img/slide02.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide02.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 2:</b> acesse a fonte de dados e clique em
+                                            <p class="card-text d-none d-md-block"><b>Passo 2:</b> acesse a fonte de
+                                                dados e clique em
                                                 qualquer parte na área da fonte.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide03.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide03.png">
+                                        <a href="img/slide03.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide03.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 3:</b> clique na aba <b>Inserir</b>, no grupo
+                                            <p class="card-text d-none d-md-block"><b>Passo 3:</b> clique na aba
+                                                <b>Inserir</b>, no grupo
                                                 <b>Tabelas</b>, e na seta para baixo para
                                                 visualizar todos os
                                                 tipos de tabelas disponíveis.
@@ -739,18 +749,28 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide04.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide04.png">
+                                        <a href="img/slide04.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide04.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 4:</b> selecione o tipo de tabela que você
+                                            <p class="card-text d-none d-md-block"><b>Passo 4:</b> selecione o tipo de
+                                                tabela que você
                                                 achar mais adequado e clique em <b>OK</b>.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide05.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide05.png">
+                                        <a href="img/slide05.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide05.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 5:</b> clique duas vezes sobre o título da
+                                            <p class="card-text d-none d-md-block"><b>Passo 5:</b> clique duas vezes
+                                                sobre o título da
                                                 tabela para inserir um novo título.</p>
                                         </div>
                                     </div>
@@ -1226,14 +1246,10 @@
     <script src="../print/print/template.config.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
-    <!--Atividade de verdadeiro ou falso-->
     <script src="../assets/atividades/perguntas/perguntas.js"></script>
-    <!--Atividade de jogo da memória-->
     <script src="../assets/atividades/jogo_memoria/jogoMemoria.js"></script>
-    <!--Atividade arrasta e solta-->
     <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
     <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
-    <!--Atividade associar colunas-->
     <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
     <script>
         var splide = new Splide('.splide', {
@@ -1249,7 +1265,6 @@
             $("body").prognroll();
         });
     </script>
-
     <!-- Handtalk -->
     <script>
         var scriptElem = document.createElement("script");

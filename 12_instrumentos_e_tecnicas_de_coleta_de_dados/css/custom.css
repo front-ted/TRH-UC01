@@ -201,6 +201,18 @@ span h5 {
     margin-bottom: 15px;
 }
 
+.slide-novo .card {
+    width: 100% !important;
+}
+
+.slide-novo.container-fluid .splide .splide__slide {
+    width: 100% !important;
+}
+
+.slide-novo {
+    margin-bottom: 100px !important;
+}
+
 @media screen and (max-width: 1024px) {
     .painel1 {
         scale: 0.8;
@@ -333,5 +345,11 @@ span h5 {
         width: 130%;
         display: block;
         color: #000;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list-group-item-action {
+        width: 120%;
     }
 }
