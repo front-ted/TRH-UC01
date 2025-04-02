@@ -234,17 +234,16 @@ thead th {
 /* INICIO PAINEL1 */
 .painel1 {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
-    /* 
+    background: url(../img/painel_arq/painel.png);
+    background-repeat: no-repeat;
     height: 740px;
-    background: url(../img/painel_arq/painel_layout.png);
-    background-repeat: no-repeat; 
-    */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .painel1 .primeiro-bt-painel1 {
@@ -252,6 +251,8 @@ thead th {
     justify-content: center;
     width: 100%;
     align-items: center;
+    padding-top: 250px;
+    padding-left: 60px;
 }
 
 .painel1 .segundo-bt-painel1 {
@@ -259,6 +260,7 @@ thead th {
     justify-content: center;
     width: 100%;
     align-items: center;
+    padding-left: 60px;
 }
 
 .painel1 .terceiro-bt-painel1 {
@@ -266,6 +268,7 @@ thead th {
     justify-content: center;
     width: 100%;
     align-items: center;
+    padding-left: 60px;
 }
 
 .painel1 .quarto-bt-painel1 {
@@ -273,6 +276,7 @@ thead th {
     justify-content: center;
     width: 100%;
     align-items: center;
+    padding-left: 60px;
 }
 
 .bt-painel1 {
@@ -305,7 +309,7 @@ thead th {
 }
 
 .bt6-painel1 {
-    background: url(../img/painel_arq/bt0.png);
+    background: url(../img/painel_arq/bt12_hover.png);
 }
 
 .bt7-painel1 {
@@ -353,7 +357,7 @@ thead th {
 }
 
 .bt6-painel1:hover {
-    background: url(../img/painel_arq/bt0_hover.png);
+    background: url(../img/painel_arq/bt12.png);
 }
 
 .bt7-painel1:hover {
@@ -378,6 +382,104 @@ thead th {
 
 .bt12-painel1:hover {
     background: url(../img/painel_arq/bt11_hover.png);
+}
+
+.bt1-painel1.visto {
+    background: url(../img/painel_arq/bt01_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt2-painel1.visto {
+    background: url(../img/painel_arq/bt02_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt3-painel1.visto {
+    background: url(../img/painel_arq/bt03_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt4-painel1.visto {
+    background: url(../img/painel_arq/bt04_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt5-painel1.visto {
+    background: url(../img/painel_arq/bt05_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt6-painel1.visto {
+    background: url(../img/painel_arq/bt12_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt7-painel1.visto {
+    background: url(../img/painel_arq/bt06_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt8-painel1.visto {
+    background: url(../img/painel_arq/bt07_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt9-painel1.visto {
+    background: url(../img/painel_arq/bt08_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt10-painel1.visto {
+    background: url(../img/painel_arq/bt09_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt11-painel1.visto {
+    background: url(../img/painel_arq/bt10_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt12-painel1.visto {
+    background: url(../img/painel_arq/bt11_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.painel1 .primeiro-bt-painel1.alterado {
+    padding-top: 140px;
+    padding-left: 18px;
+    margin-bottom: -30px;
+    scale: 0.8;
+    margin-top: -30px;
+}
+
+.painel1 .segundo-bt-painel1.alterado {
+    padding-top: 0px;
+    padding-left: 18px;
+    scale: 0.8;
+}
+
+.painel1 .terceiro-bt-painel1.alterado {
+    padding-top: 0px;
+    padding-left: 18px;
+    scale: 0.8;
+}
+
+.painel1 .quarto-bt-painel1.alterado {
+    padding-top: 0px;
+    padding-left: 18px;
+    scale: 0.8;
 }
 
 /* FIM PAINEL1 */
@@ -429,15 +531,15 @@ thead th {
     .ficha3 {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 767px) {
     .painel1 .primeiro-bt-painel1 {
         display: flex;
         justify-content: center;
         width: 100%;
         align-items: center;
         flex-direction: column;
+        padding-top: unset;
+        padding-left: unset;
     }
 
     .painel1 .segundo-bt-painel1 {
@@ -446,6 +548,7 @@ thead th {
         width: 100%;
         align-items: center;
         flex-direction: column;
+        padding-left: unset;
     }
 
     .painel1 .terceiro-bt-painel1 {
@@ -454,6 +557,7 @@ thead th {
         width: 100%;
         align-items: center;
         flex-direction: column;
+        padding-left: unset;
     }
 
     .painel1 .quarto-bt-painel1 {
@@ -462,5 +566,39 @@ thead th {
         width: 100%;
         align-items: center;
         flex-direction: column;
+        padding-left: unset;
+    }
+
+    .painel1 {
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: none;
+    }
+
+    .painel1 .primeiro-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        scale: 1.0;
+        margin-top: 0px;
+    }
+
+    .painel1 .segundo-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        scale: 1.0;
+    }
+
+    .painel1 .terceiro-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        scale: 1.0;
+    }
+
+    .painel1 .quarto-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        scale: 1.0;
     }
 }

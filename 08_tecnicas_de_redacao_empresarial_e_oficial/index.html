@@ -69,15 +69,15 @@
                 <p>Para compreender melhor as técnicas de redação empresarial e oficial, é necessário, em primeiro
                     lugar, saber diferenciar essas duas redações, pois elas podem ser semelhantes em alguns aspectos,
                     porém existem diferenças bem pontuais que precisam ser esclarecidas.</p>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-6 d-flex justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                         <div class="destaque borda-colorida">
                             <p>A diferença mais relevante é que a <b>redação empresarial</b> se refere a toda
                                 documentação
                                 emitida por <b>organizações privadas</b>.</p>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                         <div class="destaque borda-colorida">
                             <p>Já a <b>redação oficial</b> é relativa à <b>esfera pública</b>, ou seja, a toda
                                 documentação elaborada
@@ -794,7 +794,7 @@
                                     </div>
                                     <p>Veja a disposição dos itens citados em um modelo de ofício:</p>
                                     <p>Para visualizar um exemplo de ofício, clique ou toque no botão.</p>
-                                    <a role="button" class="botao bt-pdf hvr-grow-shadow" href="pdf/"
+                                    <a role="button" class="botao bt-pdf hvr-grow-shadow" href="pdf/oficio.pdf"
                                         target="_blank">Ofício</a>
                                 </div>
                             </div>
@@ -1062,7 +1062,7 @@
                                                 <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapse11"
                                                     aria-expanded="false" aria-controls="collapse11">
-                                                    Endereço de e-mail
+                                                    <span>Endereço de <i>e-mail</i></span>
                                                 </button>
                                             </h2>
                                             <div id="collapse11" class="accordion-collapse collapse"
@@ -1173,7 +1173,7 @@
                                     <p>Para visualizar um exemplo de <i>e-mail</i>, clique ou toque no botão a seguir.
                                     </p>
                                     <a role="button" class="botao bt-pdf hvr-grow-shadow" href="pdf/email.pdf"
-                                        target="_blank">E-mail</a>
+                                        target="_blank"><i>E-mail</i></a>
                                 </div>
                             </div>
                         </div>
@@ -3078,7 +3078,52 @@
             $("body").prognroll();
         });
     </script>
+    <script>
+        const botoes = document.querySelectorAll('.bt1-painel1, .bt2-painel1, .bt3-painel1, .bt4-painel1, .bt5-painel1, .bt6-painel1, .bt7-painel1, .bt8-painel1, .bt9-painel1, .bt10-painel1, .bt11-painel1, .bt12-painel1');
+        const painel1 = document.querySelector('.painel1');
 
+        function atualizarBotoes() {
+            botoes.forEach((botao, index) => {
+                if (localStorage.getItem(`botao-${index}`) === 'true') {
+                    botao.classList.add('visto');
+                    // Verifique qual botão foi clicado e adicione a classe alterado ao contêiner
+                    if (index === 0) {
+                        painel1.querySelector('.primeiro-bt-painel1').classList.add('alterado');
+                    } else if (index === 1) {
+                        painel1.querySelector('.segundo-bt-painel1').classList.add('alterado');
+                    } else if (index === 2) {
+                        painel1.querySelector('.terceiro-bt-painel1').classList.add('alterado');
+                    } else if (index === 3) {
+                        painel1.querySelector('.quarto-bt-painel1').classList.add('alterado');
+                    }
+                }
+            });
+        }
+
+        botoes.forEach((botao, index) => {
+            botao.addEventListener('click', () => {
+                botao.classList.add('visto');
+                localStorage.setItem(`botao-${index}`, 'true');
+
+                if (index === 0) {
+                    painel1.querySelector('.primeiro-bt-painel1').classList.add('alterado');
+                } else if (index === 1) {
+                    painel1.querySelector('.segundo-bt-painel1').classList.add('alterado');
+                } else if (index === 2) {
+                    painel1.querySelector('.terceiro-bt-painel1').classList.add('alterado');
+                } else if (index === 3) {
+                    painel1.querySelector('.quarto-bt-painel1').classList.add('alterado');
+                }
+            });
+        });
+
+        atualizarBotoes();
+
+        window.onbeforeunload = function () {
+            localStorage.clear();
+        };
+
+    </script>
     <!-- Handtalk -->
     <script>
         var scriptElem = document.createElement("script");

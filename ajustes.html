@@ -1,11 +1,11 @@
 <div class="visually-hidden print">
 </div>
 
-<div class="row align-items-center justify-content-center">
-    <div class="col-6 d-flex justify-content-center">
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 
     </div>
-    <div class="col-6 d-flex justify-content-center">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 
     </div>
 </div>
@@ -21,7 +21,35 @@
     <figcaption class="figure-caption text-center"></figcaption>
 </figure>
 
+<!-- SCRIPT SOBRE GERAR O CLICK E MANTER ELE ATIVO -->
+<!-- <script>
+    const botoes = document.querySelectorAll('.bt1-painel1, .bt2-painel1, .bt3-painel1, .bt4-painel1, .bt5-painel1, .bt6-painel1, .bt7-painel1, .bt8-painel1, .bt9-painel1, .bt10-painel1, .bt11-painel1, .bt12-painel1');
 
+
+    function atualizarBotoes() {
+        botoes.forEach((botao, index) => {
+            if (localStorage.getItem(`botao-${index}`) === 'true') {
+                botao.classList.add('visto');
+            }
+        });
+    }
+
+
+    botoes.forEach((botao, index) => {
+        botao.addEventListener('click', () => {
+            botao.classList.add('visto');
+            localStorage.setItem(`botao-${index}`, 'true');
+        });
+    });
+
+
+    atualizarBotoes();
+
+
+    window.onbeforeunload = function () {
+        localStorage.clear();
+    };
+</script> -->
 
 Página 1 Feito!
 
@@ -35,7 +63,7 @@ Página 6 Feito!
 
 Página 7 Feito!
 
-* Página 8 fazendo!
+Página 8 Feito!
 
 Página 9 Feito!
 
@@ -46,3 +74,8 @@ Página 12 Feito!
 Página Referências Feito!
 
 Página Tela Inicial Feito!
+
+
+
+
+10,11,12 verificar negrito, italico, marcadores e no monile as fotos
