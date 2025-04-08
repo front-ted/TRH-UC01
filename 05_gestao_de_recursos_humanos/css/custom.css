@@ -9,6 +9,11 @@ body {
     background-attachment: fixed, fixed;
 }
 
+.bg-escuro .destaque *,
+.bg-escuro .tab-pane * {
+    color: #ffffff;
+}
+
 .destaque-img {
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
     border-radius: 20px;

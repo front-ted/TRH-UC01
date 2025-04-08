@@ -468,7 +468,69 @@ span h5 {
     }
 }
 
+@media screen and (max-width: 430px) {
+    .texto5 {
+        bottom: -375px;
+        right: -70px;
+        position: relative;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        color: #000;
+    }
+
+    .texto7 {
+        bottom: -510px;
+        right: -70px;
+        position: relative;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        color: #000;
+    }
+
+    .texto8 {
+        left: 70px;
+        bottom: -445px;
+        position: relative;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        color: #000;
+    }
+
+    .texto9 {
+        bottom: -615px;
+        right: -70px;
+        position: relative;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        color: #000;
+    }
+
+    .texto10 {
+        left: 70px;
+        bottom: -545px;
+        position: relative;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        color: #000;
+    }
+}
+
 @media screen and (max-width: 400px) {
+    .texto5 {
+        bottom: -351px;
+        right: -70px;
+        position: relative;
+        padding: 10px;
+        width: 90%;
+        display: block;
+        color: #000;
+    }
+
     .texto7 {
         bottom: -420px;
         right: -70px;

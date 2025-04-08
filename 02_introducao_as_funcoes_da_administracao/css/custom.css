@@ -7,7 +7,6 @@
     background-size: auto, cover;
 }
 
-
 .bloco2 {
     background: url('../img/asset02.png') 100% 10%,
         #fff;
@@ -16,6 +15,10 @@
     border-radius: 45px;
     margin-top: -2%;
     margin-bottom: -2%;
+}
+
+.bg-escuro .bloco2 {
+    background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .bloco3 {
