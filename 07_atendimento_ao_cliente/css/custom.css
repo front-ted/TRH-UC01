@@ -8,13 +8,13 @@ body {
     background-attachment: fixed, fixed, fixed;
 }
 
-/* .bg-escuro .tab-pane * {
+.bg-escuro .tab-pane * {
     color: #ffffff;
 }
 
-.bg-escuro i{
-    color: #ffffff;
-} */
+.bg-escuro .modal-body * {
+    color: #000;
+}
 
 .destaque-novo {
     background: #f8dcec !important;

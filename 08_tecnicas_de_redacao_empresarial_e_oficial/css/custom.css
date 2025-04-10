@@ -45,6 +45,22 @@
     align-items: flex-start;
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .ficha1 p {
+    color: #000;
+}
+
+.bg-escuro .ficha2 p {
+    color: #000;
+}
+
+.bg-escuro .ficha3 p {
+    color: #000;
+}
+
 body {
     background: url('../img/asset01.png') 105% 10%,
         url('../img/asset02.png') 0% 90%,
@@ -113,8 +129,6 @@ thead th {
     margin-top: 50px;
     margin-bottom: 70px;
 }
-
-
 
 .painel2 .topo-bt-painel2 {
     display: flex;

@@ -1,6 +1,26 @@
 @charset "utf-8";
 
-.bloco1 {
+.bg-escuro .painel1 * {
+    color: #ffffff;
+}
+
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .tab-pane * {
+    color: #ffffff;
+}
+
+.bg-escuro .link-tachado {
+    color: #ffffff;
+}
+
+.bg-escuro .link-tachado:hover {
+    color: #ffffff;
+}
+
+.bg-escuro .bloco1 {
     background: url(../img/asset01.png) 0% 110%,
         url(../img/asset02.png) 100% 50%,
         url(../img/asset03.png) 0% 210%,
@@ -33,7 +53,7 @@
 }
 
 .link-tachado {
-    color: black;
+    color: #000;
     text-decoration: underline;
     text-decoration-color: #0E4989;
     text-decoration-thickness: 2px;
@@ -41,7 +61,7 @@
 }
 
 .link-tachado:hover {
-    color: black;
+    color: #000;
     text-decoration: underline;
     text-decoration-color: #0E4989;
     text-decoration-thickness: 2px;

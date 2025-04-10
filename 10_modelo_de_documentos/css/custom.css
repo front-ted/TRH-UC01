@@ -76,6 +76,18 @@ body {
     background-attachment: fixed, fixed, fixed;
 }
 
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .table * {
+    color: #ffffff;
+}
+
+.bg-escuro .table figcaption {
+    color: #000;
+}
+
 /* INICIO PAINEL GAITINHA */
 .accordion-button,
 .accordion-button:not(.collapsed) {
