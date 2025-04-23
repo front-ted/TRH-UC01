@@ -6,6 +6,19 @@ body {
     background-attachment: fixed, fixed, fixed;
 }
 
+/* Remove a borda esquerda só das células com rowspan (Indústria e Comércio e Serviços) */
+.tabela-2 tbody td[rowspan] {
+    border-left: 1px solid transparent;
+}
+
+/* Garante que as outras células tenham a borda esquerda visível */
+.tabela-2 tbody td:not([rowspan]) {
+    border-left: 5px solid #fff
+        /* ou a cor que você usa para as divisões */
+}
+
+
+
 
 
 .offcanvas-body .espaco {
@@ -56,8 +69,8 @@ body {
 .pessoa-fisica {
     background: url('../img/info01_1.png');
     width: 282px;
-    height: 428px;
-    margin-top: 15%;
+    height: 535px;
+    margin-top: 8%;
 }
 
 .pessoa-juridica {
@@ -75,6 +88,7 @@ body {
 .texto-1 {
     color: #fff;
     padding: 20px;
+    padding-top: 17%;
 }
 
 .texto-2 {
@@ -416,6 +430,21 @@ body {
         margin-left: 12%;
     }
 
+    .texto-2 {
+        color: #fff;
+        padding: 7px;
+        padding-top: 90%;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+    .marcador-padrao li {
+        background: url('../../assets/images/marcador_padrao.svg') no-repeat left top 3px / 14px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -437,6 +466,20 @@ body {
         margin-left: 11%;
     }
 
+    .texto-2 {
+        color: #fff;
+        padding: 7px;
+        padding-top: 90%;
+    }
+
+    .marcador-padrao li {
+        background: url('../../assets/images/marcador_padrao.svg') no-repeat left top 3px / 14px;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+
+
 }
 
 
@@ -455,8 +498,8 @@ body {
 
     .texto-2 {
         color: #fff;
-        padding: 15px;
-        padding-top: 85%;
+        padding: 7px;
+        padding-top: 90%;
     }
 
     .caixa-1,
@@ -507,6 +550,9 @@ body {
         font-size: 1.1em;
     }
 
+    .img-mobile {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 390px) {

@@ -106,6 +106,21 @@
     text-shadow: none !important;
   }
 
+  .sublinhado {
+    text-decoration: underline;
+  }
+
+  .pagina img	{
+    display: inline-block;
+    max-width: 80% !important;
+  }
+
+  .pagina .img-maior	{
+    display: inline-block;
+    max-width: 100% !important;
+  }
+
+
   header {
     display: none !important;
   }
