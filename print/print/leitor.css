@@ -164,7 +164,7 @@
 }
 .pagina img	{
   display: inline-block;
-  max-width: 60% !important;
+  max-width: 80% !important;
 }
 .pagina legend{
   display: block;
@@ -674,10 +674,10 @@ iframe, iframe.youtube-pl{
   display: none;
 }
 .destaque{
-  width: 80%;
-  border: 2px solid;
+  width: 100%;
+  /* border: 2px solid;
   margin: 20px auto;
-  padding: 10px;
+  padding: 10px; */
 }
 .destaque.gradiente{background: transparent;}
 /* código para tabela não desconfigurar na versão impressa */

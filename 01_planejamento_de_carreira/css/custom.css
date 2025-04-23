@@ -539,5 +539,8 @@ label.opt {
         margin-bottom: -148px;
         margin-top: -181px;
     }
+    .img-mobile{
+        display: none;
+    }
 
 }

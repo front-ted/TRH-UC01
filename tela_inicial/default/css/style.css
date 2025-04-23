@@ -714,6 +714,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .circulo-1 {
+      left: -346px;
+  }
+}
+
 @media screen and (max-width: 1330px) {
   .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
     display: none;
