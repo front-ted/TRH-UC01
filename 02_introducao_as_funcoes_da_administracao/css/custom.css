@@ -92,6 +92,11 @@
     height: 500px;
 }
 
+.painel1 .botao-clicado {
+    opacity: 0.4;
+}
+
+
 .botao-p {
     background: url('../img/painel01_01.png') no-repeat;
     width: 330px;
@@ -104,11 +109,19 @@
     transition: transform 0.3s ease;
 }
 
-.botao-p:hover {
+/* .botao-p:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
+} */
+
+.botao-p:hover,
+.botao-d:hover,
+.botao-c:hover,
+.botao-a:hover {
+    filter: brightness(75%);
 }
+
 
 .botao-d {
     background: url('../img/painel01_02.png') no-repeat;
@@ -122,11 +135,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-d:hover {
+/* .botao-d:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .botao-c {
     background: url('../img/painel01_03.png') no-repeat;
@@ -140,11 +153,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-c:hover {
+/* .botao-c:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .botao-a {
     background: url('../img/painel01_04.png') no-repeat;
@@ -158,11 +171,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-a:hover {
+/* .botao-a:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .infografico-planejamento {
     display: flex;
@@ -233,6 +246,25 @@
     height: 500px;
 }
 
+.painel2 .botao-clicado {
+    opacity: 0.35;
+}
+
+
+/* .botao-p:hover {
+    transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
+} */
+
+.botao-planejamento:hover,
+.botao-org:hover,
+.botao-direcao:hover,
+.botao-controle:hover {
+    filter: brightness(75%);
+}
+
+
 .botao-planejamento {
     background: url('../img/painel02_01.png') no-repeat;
     width: 330px;
@@ -245,11 +277,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-planejamento:hover {
+/* .botao-planejamento:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .botao-org {
     background: url('../img/painel02_02.png') no-repeat;
@@ -263,11 +295,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-org:hover {
+/* .botao-org:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .botao-direcao {
     background: url('../img/painel02_03.png') no-repeat;
@@ -281,11 +313,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-direcao:hover {
+/* .botao-direcao:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .botao-controle {
     background: url('../img/painel02_04.png') no-repeat;
@@ -299,11 +331,11 @@
     transition: transform 0.3s ease;
 }
 
-.botao-controle:hover {
+/* .botao-controle:hover {
     transform: scale(1.1);
     z-index: 9999;
     filter: brightness(0.9);
-}
+} */
 
 .bg-escuro .infografico-funcoes li {
     color: #000;
@@ -353,7 +385,7 @@
         background-repeat: no-repeat, no-repeat;
         filter: drop-shadow(3px 3px 2px rgba(112, 112, 112, 0.75));
         border-radius: 45px;
-        margin-top: -9%;
+        margin-top: -5%;
         margin-bottom: -5%;
     }
 
