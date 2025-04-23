@@ -7,7 +7,6 @@
     background-size: auto, cover;
 }
 
-
 .bloco2 {
     background: url('../img/asset02.png') 100% 10%,
         #fff;
@@ -16,6 +15,10 @@
     border-radius: 45px;
     margin-top: -2%;
     margin-bottom: -2%;
+}
+
+.bg-escuro .bloco2 {
+    background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .bloco3 {
@@ -85,7 +88,6 @@
     padding-right: 28%;
 }
 
-
 .painel1 {
     height: 500px;
 }
@@ -98,10 +100,14 @@
     position: absolute;
     margin-top: 2%;
     margin-left: 25%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-p:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .botao-d {
@@ -112,10 +118,14 @@
     position: absolute;
     margin-top: 2%;
     margin-left: 48%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-d:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .botao-c {
@@ -126,10 +136,14 @@
     position: absolute;
     margin-top: 25.3%;
     margin-left: 39.9%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-c:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .botao-a {
@@ -140,12 +154,15 @@
     position: absolute;
     margin-top: 17%;
     margin-left: 25%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-a:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
-
 
 .infografico-planejamento {
     display: flex;
@@ -224,10 +241,14 @@
     position: absolute;
     margin-top: 2%;
     margin-left: 25%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-planejamento:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .botao-org {
@@ -238,10 +259,14 @@
     position: absolute;
     margin-top: 2%;
     margin-left: 48%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-org:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .botao-direcao {
@@ -252,10 +277,14 @@
     position: absolute;
     margin-top: 25.1%;
     margin-left: 39.9%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-direcao:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .botao-controle {
@@ -266,10 +295,14 @@
     position: absolute;
     margin-top: 17%;
     margin-left: 25%;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .botao-controle:hover {
     transform: scale(1.1);
+    z-index: 9999;
+    filter: brightness(0.9);
 }
 
 .bg-escuro .infografico-funcoes li {
@@ -307,7 +340,9 @@
 
 
 @media screen and (max-width: 1024px) {
-    .bloco1, .bloco3 {
+
+    .bloco1,
+    .bloco3 {
         background:
             linear-gradient(to bottom right, #dce6f9, #f8dcec);
         background-size: cover;

@@ -25,17 +25,12 @@
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
     <link rel="stylesheet" href="../assets/css/template.css">
-    <!-- Atividade de verdadeiro ou falso -->
     <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
-    <!--Atividade arrasta e solta-->
     <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
     <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
-    <!--Atividade relacionar colunas-->
     <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
-    <!--Atividade jogo da memória-->
     <link rel="stylesheet" href="../assets/atividades/jogo_memoria/jogoMemoria.css">
     <link rel="stylesheet" href="css/custom.css">
-
 </head>
 
 <body class="bg-claro">
@@ -141,9 +136,11 @@
                     <li><b>Segura</b>: quando pode ser acessada somente por usuários autorizados.</li>
                 </ul>
                 <figure class="my-5">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="img/img01.png">
-                    </div>
+                    <img src="img/img01.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                        alt="Imagem">
+                    <a href="img/img01.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                        <img src="img/img01.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
+                    </a>
                     <figcaption class="figure-caption text-center">
                         Processo de transformação dos dados em informação <br>
                         Fonte: Adaptado de Chiavenato (2010)
@@ -262,12 +259,39 @@
                         controlador dos dados, conforme o artigo 5º da LGPD (Brasil, 2018).</p>
                 </div>
                 <p>Sobre os “personagens” da lei, é importante conhecê-los:</p>
-                <figure class="my-5" aria-hidden="true">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="elemento gráfico">
+                <div class="row align-items-baseline justify-content-center no-print mt-5" aria-hidden="true">
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                        <img class="img-fluid d-block mx-auto mb-2 print" src="img/icon01.png">
+                        <p class="text-center">É aquele a quem se referem os dados, como clientes, colaboradores,
+                            seguradoras.</p>
                     </div>
-                </figure>
-                <div class="visually-hidden no-print">
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                        <img class="img-fluid d-block mx-auto mb-2 print" src="img/icon02.png">
+                        <p class="text-center">É a pessoa natural ou jurídica a quem competem as decisões referentes ao
+                            tratamento dos dados
+                            pessoais, por exemplo, a organização.</p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                        <img class="img-fluid d-block mx-auto mb-2 print" src="img/icon03.png">
+                        <p class="text-center">É o responsável pelo tratamento dos dados em nome do controlador.</p>
+                    </div>
+                </div>
+                <div class="row align-items-baseline justify-content-center no-print mb-5" aria-hidden="true">
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                        <img class="img-fluid d-block mx-auto mb-2 print" src="img/icon04.png">
+                        <p class="text-center">É pessoa indicada pelo controlador para atuar na comunicação entre os
+                            titulares, o
+                            controlador e
+                            a
+                            autoridade de proteção dos dados (ANPD).</p>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                        <img class="img-fluid d-block mx-auto mb-2 print" src="img/icon05.png">
+                        <p class="text-center">É o órgão público responsável por zelar, implementar e fiscalizar o
+                            cumprimento da lei.</p>
+                    </div>
+                </div>
+                <div class="visually-hidden print">
                     <h5>Titular</h5>
                     <p>É aquele a quem se referem os dados, como clientes, colaboradores, seguradoras.</p>
                     <h5>Controlador</h5>
@@ -284,7 +308,7 @@
                 </div>
                 <p>Para que a organização possa tratar esses dados, é necessário que exista fundamento, ou, como também
                     é chamado, princípio legal:</p>
-                <div class="citacao">
+                <div class="citacao my-5">
                     <p>Art. 6º As atividades de tratamento de dados pessoais deverão observar a boa-fé e os seguintes
                         princípios:</p>
                     <p>I – finalidade: realização do tratamento para propósitos legítimos, específicos, explícitos e
@@ -365,12 +389,52 @@
                         para o novo tratamento e a preservação dos direitos do titular, assim como os fundamentos e os
                         princípios previstos nesta Lei. (Incluído pela Lei nº 13.853, de 2019) Vigência</p>
                 </div>
-                <figure class="my-5" aria-hidden="true">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="elemento gráfico">
-                    </div>
-                </figure>
-                <div class="visually-hidden no-print">
+                <h4 class="titulo-painel1 no-print" aria-hidden="true"><b>Princípios do tratamento dos dados</b></h4>
+                <div class="painel1 mx-auto no-print" aria-hidden="true">
+                    <span class="texto2">
+                        <h5>Finalidade</h5>
+                        <p>Apenas coletar dados para fins legítimos, informando com clareza ao usuário a finalidade da
+                            coleta.</p>
+                    </span>
+                    <span class="texto1">
+                        <h5>Adequação</h5>
+                        <p>Disponibilizar todas as informações sobre a coleta de dados ao usuário de forma honesta.</p>
+                    </span>
+                    <span class="texto4">
+                        <h5>Necessidade</h5>
+                        <p>Manter e utilizar somente dados essenciais, necessários, apagando-os quando deixarem de ser
+                            relevantes.</p>
+                    </span>
+                    <span class="texto3">
+                        <h5>Livre-acesso</h5>
+                        <p>Apresentar ao usuário os dados e a forma como são processados, ao ser requisitado.</p>
+                    </span>
+                    <span class="texto6">
+                        <h5>Precisão</h5>
+                        <p>Manter os dados precisos a todo momento, deletando ou atualizando.</p>
+                    </span>
+                    <span class="texto5">
+                        <h5>Transparência</h5>
+                        <p>Dar informação ao usuário de forma clara e acessível sobre os riscos dos dados.</p>
+                    </span>
+                    <span class="texto8">
+                        <h5>Segurança</h5>
+                        <p>Ter medidas técnicas e administrativas em relação a furtos ou perda dos dados.</p>
+                    </span>
+                    <span class="texto7">
+                        <h5>Prevenção</h5>
+                        <p>Adotar medidas preventivas para proteção dos dados evitado danos aos titulares.</p>
+                    </span>
+                    <span class="texto10">
+                        <h5>Não discriminação</h5>
+                        <p>Não utilizar dados com fins discriminatórios, ilícitos ou abusivos.</p>
+                    </span>
+                    <span class="texto9">
+                        <h5>Responsabilidade</h5>
+                        <p>Adotar esses princípios e comprovar sua adoção em todos os procedimentos da organização.</p>
+                    </span>
+                </div>
+                <div class="visually-hidden print">
                     <h5><b>Princípios do tratamento dos dados</b></h5>
                     <h5>Finalidade</h5>
                     <p>Apenas coletar dados para fins legítimos, informando com clareza ao usuário a finalidade da
@@ -519,8 +583,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="grafismo">
                     <div class="destaque borda-colorida icone pergunta">
                         <p>O que é técnica?</p>
@@ -543,9 +605,11 @@
                         informação</b>. </p>
                 <p>Todo sistema é constituído por quatro componentes básicos:</p>
                 <figure class="my-5" aria-hidden="true">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="img/img02.png">
-                    </div>
+                    <img src="img/img02.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                        alt="Imagem">
+                    <a href="img/img02.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                        <img src="img/img02.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
+                    </a>
                     <figcaption class="figure-caption text-center">Componentes básicos do sistema<br>
                         Fonte: Senac EAD (2025)
                     </figcaption>
@@ -599,9 +663,11 @@
                     em
                     linhas, colunas e células.</p>
                 <figure class="my-5">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="img/img03.png">
-                    </div>
+                    <img src="img/img03.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                        alt="Imagem">
+                    <a href="img/img03.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                        <img src="img/img03.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
+                    </a>
                     <figcaption class="figure-caption text-center">Exemplo de uma tabela<br>
                         Fonte: Senac EAD (2025)
                     </figcaption>
@@ -613,9 +679,11 @@
                 <p>São dados ou valores numéricos representados visualmente para facilitar sua compreensão. Os tipos de
                     gráficos mais utilizados são os de colunas, barras e linhas e os circulares (em <i>pizza</i>). </p>
                 <figure class="my-5">
-                    <div class="figure-img">
-                        <img class="img-fluid d-block mx-auto mb-4 print" src="img/img04.png">
-                    </div>
+                    <img src="img/img04.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                        alt="Imagem">
+                    <a href="img/img04.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                        <img src="img/img04.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
+                    </a>
                     <figcaption class="figure-caption text-center">Exemplos de diferentes tipos de gráficos<br>
                         Fonte: Senac EAD (2025)
                     </figcaption>
@@ -634,15 +702,20 @@
                     </div>
                 </div>
                 <p class="no-print" aria-hidden="true">Clique ou toque nas setas para visualizar o conteúdo.</p>
-                <div class="container-fluid no-print my-5" aria-hidden="true">
+                <div class="container-fluid no-print slide-novo" aria-hidden="true">
                     <div class="splide" role="group">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide01.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide01.png">
+                                        <a href="img/slide01.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide01.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 1:</b> crie uma tabela com os dados que você
+                                            <p class="card-text d-none d-md-block"><b>Passo 1:</b> crie uma tabela com
+                                                os dados que você
                                                 quer visualizar no gráfico. Ex.: fazer um
                                                 comparativo
                                                 entre as contratações e as demissões do primeiro semestre de 2016.</p>
@@ -651,18 +724,28 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide02.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide02.png">
+                                        <a href="img/slide02.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide02.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 2:</b> acesse a fonte de dados e clique em
+                                            <p class="card-text d-none d-md-block"><b>Passo 2:</b> acesse a fonte de
+                                                dados e clique em
                                                 qualquer parte na área da fonte.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide03.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide03.png">
+                                        <a href="img/slide03.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide03.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 3:</b> clique na aba <b>Inserir</b>, no grupo
+                                            <p class="card-text d-none d-md-block"><b>Passo 3:</b> clique na aba
+                                                <b>Inserir</b>, no grupo
                                                 <b>Tabelas</b>, e na seta para baixo para
                                                 visualizar todos os
                                                 tipos de tabelas disponíveis.
@@ -672,18 +755,28 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide04.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide04.png">
+                                        <a href="img/slide04.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide04.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 4:</b> selecione o tipo de tabela que você
+                                            <p class="card-text d-none d-md-block"><b>Passo 4:</b> selecione o tipo de
+                                                tabela que você
                                                 achar mais adequado e clique em <b>OK</b>.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="card">
-                                        <img class="card-img-top img-fluid d-block" src="img/slide05.png">
+                                        <img class="card-img-top img-fluid d-none d-md-block" src="img/slide05.png">
+                                        <a href="img/slide05.png" target="_blank"
+                                            class="img-zoom d-block d-md-none no-print">
+                                            <img src="img/slide05.png" class="img-fluid" alt="Imagem">
+                                        </a>
                                         <div class="card-body">
-                                            <p class="card-text"><b>Passo 5:</b> clique duas vezes sobre o título da
+                                            <p class="card-text d-none d-md-block"><b>Passo 5:</b> clique duas vezes
+                                                sobre o título da
                                                 tabela para inserir um novo título.</p>
                                         </div>
                                     </div>
@@ -1159,14 +1252,10 @@
     <script src="../print/print/template.config.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
-    <!--Atividade de verdadeiro ou falso-->
     <script src="../assets/atividades/perguntas/perguntas.js"></script>
-    <!--Atividade de jogo da memória-->
     <script src="../assets/atividades/jogo_memoria/jogoMemoria.js"></script>
-    <!--Atividade arrasta e solta-->
     <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
     <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
-    <!--Atividade associar colunas-->
     <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
     <script>
         var splide = new Splide('.splide', {
@@ -1182,7 +1271,6 @@
             $("body").prognroll();
         });
     </script>
-
     <!-- Handtalk -->
     <script>
         var scriptElem = document.createElement("script");

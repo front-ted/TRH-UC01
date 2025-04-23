@@ -1,16 +1,18 @@
 @charset "utf-8";
 
 .ficha1 {
-    background: url("../img/ficha01.png");
+    background: url(../img/ficha01.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 20px;
+    padding-top: 180px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     height: 100%;
-    width: 100%;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .ficha2 {
@@ -18,23 +20,599 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 20px;
+    padding-top: 180px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     height: 100%;
-    width: 100%;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
 }
+
 .ficha3 {
     background: url("../img/comunic.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 20px;
+    padding-top: 180px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     height: 100%;
-    width: 100%;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
 }
-@media screen and (max-width: 980px) {}
+
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .ficha1 p {
+    color: #000;
+}
+
+.bg-escuro .ficha2 p {
+    color: #000;
+}
+
+.bg-escuro .ficha3 p {
+    color: #000;
+}
+
+body {
+    background: url('../img/asset01.png') 105% 10%,
+        url('../img/asset02.png') 0% 90%,
+        linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    background-size: 20%, 10%, 100%;
+}
+
+/* INICIO PAINEL GAITINHA */
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    background-color: #92ACCE;
+    color: #ffffff;
+}
+
+.accordion-body {
+    border-left: 3px solid #92ACCE;
+}
+
+/* FIM PAINEL GAITINHA */
+/* INICIO TABELAS */
+table {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+thead {
+    background: linear-gradient(to right, #92ACCE, #004788);
+    color: #fff;
+    text-align: center;
+}
+
+thead th {
+    border-right: unset;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-width: 2px;
+    border-color: #92ACCE;
+}
+
+.table>:not(:first-child) {
+    border-top: none !important;
+    margin-top: 10px;
+}
+
+thead th {
+    border-right: 2px solid #fff;
+}
+
+/* FIM TABELAS */
+/* INICIO PAINEL2 */
+.painel2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.painel2 .topo-bt-painel2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.painel2 .meio-bt-painel2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.painel2 .fundo-bt-painel2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.bt-painel2 {
+    border: none;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    width: 165px;
+    height: 166px;
+    margin: 40px;
+}
+
+.bt1-painel2 {
+    background: url(../img/bt_padrao/bt01_1.png);
+}
+
+.bt2-painel2 {
+    background: url(../img/bt_padrao/bt02_1.png);
+}
+
+.bt3-painel2 {
+    background: url(../img/bt_padrao/bt03_1.png);
+}
+
+.bt4-painel2 {
+    background: url(../img/bt_padrao/bt04_1.png);
+}
+
+.bt5-painel2 {
+    background: url(../img/bt_padrao/bt05_1.png);
+}
+
+.bt6-painel2 {
+    background: url(../img/bt_padrao/bt06_1.png);
+}
+
+.bt7-painel2 {
+    background: url(../img/bt_padrao/bt07_1.png);
+}
+
+.bt8-painel2 {
+    background: url(../img/bt_padrao/bt08_1.png);
+}
+
+.bt-painel2::after {
+    content: "";
+    color: #004788;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 40px;
+    border: 2px solid #004788;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 90px;
+    left: 0px;
+}
+
+.bt1-painel2::after {
+    content: "Ponto-final";
+}
+
+.bt2-painel2::after {
+    content: "Ponto de interrogação";
+}
+
+.bt3-painel2::after {
+    content: "Ponto de exclamação";
+}
+
+.bt4-painel2::after {
+    content: "Vírgula";
+}
+
+.bt5-painel2::after {
+    content: "Ponto e vírgula";
+}
+
+.bt6-painel2::after {
+    content: "Dois-pontos";
+}
+
+.bt7-painel2::after {
+    content: "Aspas";
+}
+
+.bt8-painel2::after {
+    content: "Parênteses";
+}
+
+.bt-painel2:hover {
+    transform: scale(1.1);
+}
+
+/* FIM PAINEL2 */
+/* INICIO PAINEL1 */
+.painel1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: url(../img/painel_arq/painel.png);
+    background-repeat: no-repeat;
+    height: 740px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.painel1 .primeiro-bt-painel1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 250px;
+    padding-left: 60px;
+}
+
+.painel1 .segundo-bt-painel1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.painel1 .terceiro-bt-painel1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.painel1 .quarto-bt-painel1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.bt-painel1 {
+    border: none;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    width: 184px;
+    height: 114px;
+    margin: 2px;
+}
+
+.bt1-painel1 {
+    background: url(../img/painel_arq/bt01.png);
+}
+
+.bt2-painel1 {
+    background: url(../img/painel_arq/bt02.png);
+}
+
+.bt3-painel1 {
+    background: url(../img/painel_arq/bt03.png);
+}
+
+.bt4-painel1 {
+    background: url(../img/painel_arq/bt04.png);
+}
+
+.bt5-painel1 {
+    background: url(../img/painel_arq/bt05.png);
+}
+
+.bt6-painel1 {
+    background: url(../img/painel_arq/bt12_hover.png);
+}
+
+.bt7-painel1 {
+    background: url(../img/painel_arq/bt06.png);
+}
+
+.bt8-painel1 {
+    background: url(../img/painel_arq/bt07.png);
+}
+
+.bt9-painel1 {
+    background: url(../img/painel_arq/bt08.png);
+}
+
+.bt10-painel1 {
+    background: url(../img/painel_arq/bt09.png);
+}
+
+.bt11-painel1 {
+    background: url(../img/painel_arq/bt10.png);
+}
+
+.bt12-painel1 {
+    background: url(../img/painel_arq/bt11.png);
+}
+
+.bt1-painel1:hover {
+    background: url(../img/painel_arq/bt01_hover.png);
+}
+
+.bt2-painel1:hover {
+    background: url(../img/painel_arq/bt02_hover.png);
+}
+
+.bt3-painel1:hover {
+    background: url(../img/painel_arq/bt03_hover.png);
+}
+
+.bt4-painel1:hover {
+    background: url(../img/painel_arq/bt04_hover.png);
+}
+
+.bt5-painel1:hover {
+    background: url(../img/painel_arq/bt05_hover.png);
+}
+
+.bt6-painel1:hover {
+    background: url(../img/painel_arq/bt12.png);
+}
+
+.bt7-painel1:hover {
+    background: url(../img/painel_arq/bt06_hover.png);
+}
+
+.bt8-painel1:hover {
+    background: url(../img/painel_arq/bt07_hover.png);
+}
+
+.bt9-painel1:hover {
+    background: url(../img/painel_arq/bt08_hover.png);
+}
+
+.bt10-painel1:hover {
+    background: url(../img/painel_arq/bt09_hover.png);
+}
+
+.bt11-painel1:hover {
+    background: url(../img/painel_arq/bt10_hover.png);
+}
+
+.bt12-painel1:hover {
+    background: url(../img/painel_arq/bt11_hover.png);
+}
+
+.bt1-painel1.visto {
+    background: url(../img/painel_arq/bt01_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt2-painel1.visto {
+    background: url(../img/painel_arq/bt02_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt3-painel1.visto {
+    background: url(../img/painel_arq/bt03_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt4-painel1.visto {
+    background: url(../img/painel_arq/bt04_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt5-painel1.visto {
+    background: url(../img/painel_arq/bt05_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt6-painel1.visto {
+    background: url(../img/painel_arq/bt12_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt7-painel1.visto {
+    background: url(../img/painel_arq/bt06_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt8-painel1.visto {
+    background: url(../img/painel_arq/bt07_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt9-painel1.visto {
+    background: url(../img/painel_arq/bt08_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt10-painel1.visto {
+    background: url(../img/painel_arq/bt09_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt11-painel1.visto {
+    background: url(../img/painel_arq/bt10_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.bt12-painel1.visto {
+    background: url(../img/painel_arq/bt11_click.png) no-repeat;
+    width: 294px;
+    height: 170px;
+}
+
+.painel1 .primeiro-bt-painel1.alterado {
+    padding-top: 140px;
+    padding-left: 18px;
+    margin-bottom: -30px;
+    scale: 0.8;
+    margin-top: -30px;
+}
+
+.painel1 .segundo-bt-painel1.alterado {
+    padding-top: 0px;
+    padding-left: 18px;
+    scale: 0.8;
+}
+
+.painel1 .terceiro-bt-painel1.alterado {
+    padding-top: 0px;
+    padding-left: 18px;
+    scale: 0.8;
+}
+
+.painel1 .quarto-bt-painel1.alterado {
+    padding-top: 0px;
+    padding-left: 18px;
+    scale: 0.8;
+}
+
+/* FIM PAINEL1 */
+@media screen and (max-width: 768px) {
+    body {
+        background:
+            none,
+            none,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    }
+
+    .painel2 .topo-bt-painel2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .painel2 .meio-bt-painel2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .painel2 .fundo-bt-painel2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .painel2 {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .ficha1 {
+        width: 100%;
+    }
+
+    .ficha2 {
+        width: 100%;
+    }
+
+    .ficha3 {
+        width: 100%;
+    }
+
+    .painel1 .primeiro-bt-painel1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        padding-top: unset;
+        padding-left: unset;
+    }
+
+    .painel1 .segundo-bt-painel1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        padding-left: unset;
+    }
+
+    .painel1 .terceiro-bt-painel1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        padding-left: unset;
+    }
+
+    .painel1 .quarto-bt-painel1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        padding-left: unset;
+    }
+
+    .painel1 {
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: none;
+    }
+
+    .painel1 .primeiro-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        scale: 1.0;
+        margin-top: 0px;
+    }
+
+    .painel1 .segundo-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        scale: 1.0;
+    }
+
+    .painel1 .terceiro-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        scale: 1.0;
+    }
+
+    .painel1 .quarto-bt-painel1.alterado {
+        padding-top: 0px;
+        padding-left: 0px;
+        scale: 1.0;
+    }
+}

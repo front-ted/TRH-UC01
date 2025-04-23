@@ -16,6 +16,10 @@ body {
     background-size: auto, auto, auto;
     height: 100%;
 } */
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
 html {
     height: 100%;
     margin: 0;
@@ -137,7 +141,7 @@ thead th {
     border-right: 2px solid #fff;
 }
 
-/* FIM ELIPSE TABELAS */
+/* FIM TABELAS */
 @media screen and (max-width: 768px) {
     .painel1 {
         position: relative;

@@ -1,31 +1,367 @@
 @charset "utf-8";
 
-.bloco1 {
-    background-color: #92ACCE;
+.bg-escuro .painel1 * {
+    color: #ffffff;
+}
+
+.bg-escuro .modal-body * {
+    color: #000;
+}
+
+.bg-escuro .tab-pane * {
+    color: #ffffff;
+}
+
+.bg-escuro .link-tachado {
+    color: #ffffff;
+}
+
+.bg-escuro .link-tachado:hover {
+    color: #ffffff;
+}
+
+.bg-escuro .bloco1 {
+    background: url(../img/asset01.png) 0% 110%,
+        url(../img/asset02.png) 100% 50%,
+        url(../img/asset03.png) 0% 210%,
+        linear-gradient(to bottom, #dce6f9, #f8dcec);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed, fixed;
 }
 
 .bloco2 {
-    background-color: #fff;
+    background: #fff;
 }
 
 .bloco3 {
-    background-color: #92ACCE;
+    background: url(../img/asset01.png) 0% 110%,
+        url(../img/asset02.png) 100% 50%,
+        url(../img/asset03.png) 0% 210%,
+        linear-gradient(to bottom, #dce6f9, #fff);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed, fixed;
+}
+
+.diferente {
+    margin-top: -38px !important;
+    margin-bottom: -38px !important;
 }
 
 .texto-azul {
     color: #0E4989;
+    font-weight: bold;
 }
 
 .link-tachado {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px solid #b73061;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #0E4989;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
 .link-tachado:hover {
-    text-decoration: none;
-    border-bottom: 2px solid #b73061;
-    color: black;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #0E4989;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
-@media screen and (max-width: 980px) {}
+/* INICIO PAINEL GAITINHA */
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    background-color: #92ACCE;
+    color: #ffffff;
+}
+
+.accordion-body {
+    border-left: 3px solid #92ACCE;
+}
+
+/* FIM PAINEL GAITINHA */
+
+/* INICIO PAINEL ABAS */
+.nav-tabs .nav-link {
+    background-color: #92ACCE !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    border-top-color: var(--cor-terciaria) !important;
+    border-left-color: var(--cor-terciaria) !important;
+    border-right-color: var(--cor-terciaria) !important;
+}
+
+.tab-content {
+    border-color: var(--cor-terciaria) !important;
+}
+
+/* FIM PAINEL ABAS */
+/* INICIO TABELAS */
+table {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+thead {
+    background: linear-gradient(to right, #92ACCE, #004788);
+    color: #fff;
+    text-align: center;
+}
+
+thead th {
+    border-right: unset;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-width: 2px;
+    border-color: #92ACCE;
+}
+
+.table>:not(:first-child) {
+    border-top: none !important;
+    margin-top: 10px;
+}
+
+thead th {
+    border-right: 2px solid #fff;
+}
+
+/* FIM TABELAS */
+.painel1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -390px;
+    margin-top: 45px;
+}
+
+.texto1 {
+    background: url(../img/info01/info1.png);
+    width: 761px;
+    height: 245px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 90px;
+
+}
+
+.texto2 {
+    background: url(../img/info01/info2.png);
+    width: 761px;
+    height: 245px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 110px;
+    bottom: 110px;
+}
+
+.texto3 {
+    background: url(../img/info01/info3.png);
+    width: 761px;
+    height: 245px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 110px;
+    top: -220px;
+
+}
+
+.texto4 {
+    background: url(../img/info01/info4.png);
+    width: 761px;
+    height: 245px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 110px;
+    bottom: 325px;
+}
+
+.texto5 {
+    background: url(../img/info01/info5.png);
+    width: 761px;
+    height: 245px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 110px;
+    top: -430px;
+}
+
+.texto1:after {
+    content: "Contrato social, CNPJ, regimento interno, normas de conduta, estatuto social ou outros documentos estruturantes da empresa.";
+    bottom: -90px;
+    right: -257px;
+    position: relative;
+    padding: 10px;
+    width: 56%;
+    display: block;
+}
+
+.texto2:after {
+    content: "Atas, editais, contratos, códigos, relatórios, manuais e demais documentos pertinentes à área.";
+    bottom: -90px;
+    left: 81px;
+    position: relative;
+    padding: 10px;
+    width: 56%;
+    display: block;
+}
+
+.texto3:after {
+    content: "Fichas cadastrais dos empregados, atestados médicos, folhas-ponto, contratos de trabalho, entre outros.";
+    bottom: -90px;
+    right: -257px;
+    position: relative;
+    padding: 10px;
+    width: 56%;
+    display: block;
+}
+
+.texto4:after {
+    content: "Documentos eletrônicos referentes à transmissão de informações para a Receita Federal por meio do sistema eSocial.";
+    bottom: -90px;
+    left: 81px;
+    position: relative;
+    padding: 10px;
+    width: 56%;
+    display: block;
+}
+
+.texto5:after {
+    content: "Convenção Coletiva de Trabalho, Acordo Coletivo de Trabalho e demais documentos relacionados.";
+    bottom: -90px;
+    right: -257px;
+    position: relative;
+    padding: 10px;
+    width: 56%;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .painel1 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    .texto1 {
+        position: unset;
+    }
+
+    .texto2 {
+        position: unset;
+    }
+
+    .texto3 {
+        position: unset;
+    }
+
+    .texto4 {
+        position: unset;
+    }
+
+    .texto5 {
+        position: unset;
+    }
+
+    .bloco1 {
+        background: none, none, none,
+            linear-gradient(to bottom, #dce6f9, #f8dcec);
+    }
+
+    .bloco3 {
+        background: none, none, none,
+            linear-gradient(to bottom, #dce6f9, #fff);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .painel1 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -140px;
+        margin-top: -165px;
+        flex-direction: column;
+        scale: 0.7;
+    }
+
+    .texto1 {
+        position: unset;
+        scale: 0.9;
+    }
+
+    .texto2 {
+        position: unset;
+        scale: 0.9;
+    }
+
+    .texto3 {
+        position: unset;
+        scale: 0.9;
+    }
+
+    .texto4 {
+        position: unset;
+        scale: 0.9;
+    }
+
+    .texto5 {
+        position: unset;
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .painel1 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -140px;
+        margin-top: -165px;
+        flex-direction: column;
+        scale: 0.8;
+    }
+
+    .texto1 {
+        position: unset;
+        scale: 0.7;
+    }
+
+    .texto2 {
+        position: unset;
+        scale: 0.7;
+    }
+
+    .texto3 {
+        position: unset;
+        scale: 0.7;
+    }
+
+    .texto4 {
+        position: unset;
+        scale: 0.7;
+    }
+
+    .texto5 {
+        position: unset;
+        scale: 0.7;
+    }
+}
