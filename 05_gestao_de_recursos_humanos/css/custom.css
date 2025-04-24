@@ -65,6 +65,7 @@ body {
     width: 220px;
     height: 70px;
     padding: 0px 0px;
+    position: relative;
 }
 
 .bt-painel2 {
@@ -72,6 +73,7 @@ body {
     width: 220px;
     height: 70px;
     padding: 0px 0px;
+    position: relative;
 }
 
 .botoes-painel2 {
@@ -99,20 +101,24 @@ body {
     gap: 25px;
 }
 
-.botoes-2{
+.botoes-2 {
     margin-left: -4%;
 }
 
- /* .painel1 .check.visitado::after {
-    background: url(../../assets/images/check.svg) no-repeat;
+.check.visitado::after {
+    background: url('../../assets/images/check.svg') no-repeat;
     height: 30px;
     width: 30px;
     position: absolute;
-    top: 66.8%;
-    right: 39%;
+    top: -10px;
+    right: -10px;
     content: '';
-}  */
+}
 
+
+.game-body .slot {
+    min-height: 150px;
+}
 
 .bg-escuro .destaque-bg p {
     color: #fff;
@@ -178,6 +184,17 @@ body {
     .painel1 .botao {
         font-size: 0.8em;
     }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 5px;
+        width: 157px;
+    }
+
+    .game-body .slot {
+        min-height: 150px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -205,6 +222,9 @@ body {
         background-size: cover;
         background-position: center;
         box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
+    }
+    .img-mobile{
+        display: none;
     }
 }
 
@@ -251,6 +271,15 @@ body {
         align-content: center;
         justify-content: center;
         align-items: center;
+    }
+
+    .game-body .slot .card {
+        color: var(--cor-primaria);
+        background: unset;
+        border-color: unset;
+        border: unset;
+        background-color: #4ba69d;
+        color: #fff;
     }
 }
 
