@@ -99,6 +99,21 @@ body {
     gap: 25px;
 }
 
+.botoes-2{
+    margin-left: -4%;
+}
+
+ /* .painel1 .check.visitado::after {
+    background: url(../../assets/images/check.svg) no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 66.8%;
+    right: 39%;
+    content: '';
+}  */
+
+
 .bg-escuro .destaque-bg p {
     color: #fff;
 }
