@@ -94,7 +94,7 @@ body {
 /* INICIO TABELAS */
 table {
     background-color: #fff;
-    border-radius: 20px;
+    table-layout: fixed;
 }
 
 thead {
@@ -125,6 +125,12 @@ tr {
 thead th {
     border-right: 2px solid #fff;
 }
+
+
+
+
+
+
 
 /* FIM TABELAS */
 /* INICIO PAINEL2 */
@@ -541,6 +547,45 @@ thead th {
 .bt-largura {
     width: 400px;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 1440px) {
+    body {
+        background: url('../img/asset01.png') 105% 10%,
+            url('../img/asset02.png') 0% 90%,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed, fixed, fixed;
+        background-size: 18%, 15%, 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    body {
+        background: url('../img/asset01.png') 105% 10%,
+            url('../img/asset02.png') 0% 90%,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed, fixed, fixed;
+        background-size: 18%, 15%, 100%;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    body {
+        background: url('../img/asset01.png') 105% 10%,
+            url('../img/asset02.png') 0% 90%,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed, fixed, fixed;
+        background-size: 17%, 15%, 100%;
+    }
+
 }
 
 
