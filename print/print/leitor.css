@@ -866,7 +866,7 @@ iframe.youtube-pl {
 
 /* código para tabela não desconfigurar na versão impressa */
 table.text-left.align-middle {
-  width: 80% !important;
+  width: 100% !important;
   border-collapse: collapse !important;
   margin-bottom: 10px !important;
   margin: auto !important;
@@ -887,6 +887,8 @@ table.text-left.align-middle td {
   text-align: left !important;
   width: 50% !important;
 }
+
+
 
 .figure-caption {
   margin-top: 10px;
@@ -923,4 +925,53 @@ ol[type="a"] li {
 
 .sublinhado {
   text-decoration: underline;
+}
+
+.ficha1 {
+  background: url('../../08_tecnicas_de_redacao_empresarial_e_oficial/img/ficha01.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ficha2 {
+  background: url("../../08_tecnicas_de_redacao_empresarial_e_oficial/img/ficha02.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ficha3 {
+  background: url("../../08_tecnicas_de_redacao_empresarial_e_oficial/img/comunic.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  align-content: center;
+  justify-content: center;
+}
+
+.margem-esq {
+  margin-left: 18%;
+  width: 190px;
 }

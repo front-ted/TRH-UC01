@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 50%;
+    width: 70%;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 50%;
+    width: 70%;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
@@ -39,10 +39,15 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 50%;
+    width: 70%;
     align-content: center;
     justify-content: center;
-    align-items: flex-start;
+}
+
+.margem-esq {
+    margin-left: 49%;
+    width: 190px;
+    display: block;
 }
 
 .bg-escuro .modal-body * {
@@ -68,6 +73,10 @@ body {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-attachment: fixed, fixed, fixed;
     background-size: 20%, 10%, 100%;
+}
+
+.caixas-destaque {
+    height: 220px;
 }
 
 /* INICIO PAINEL GAITINHA */
@@ -192,7 +201,7 @@ thead th {
     background: url(../img/bt_padrao/bt08_1.png);
 }
 
-.bt-painel2::after {
+/* .bt-painel2::after {
     content: "";
     color: #004788;
     background-color: #fff;
@@ -206,6 +215,22 @@ thead th {
     position: relative;
     top: 90px;
     left: 0px;
+} */
+
+.bt-painel2::after {
+    content: "";
+    color: #004788;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 40px;
+    border: 2px solid #004788;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 146%;
+    display: block;
+    position: relative;
+    top: 90px;
+    left: -37px;
 }
 
 .bt1-painel2::after {
@@ -497,7 +522,29 @@ thead th {
 }
 
 /* FIM PAINEL1 */
-@media screen and (max-width: 768px) {
+
+.modal-body .grafismo::after {
+    content: '';
+    display: block;
+    height: 211px;
+    width: 211px;
+    bottom: -50px;
+    right: -36px;
+    position: absolute;
+}
+
+
+.painel2 .botao-clicado {
+    opacity: 0.4;
+}
+
+.bt-largura {
+    width: 400px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px) {
     body {
         background:
             none,
@@ -505,6 +552,15 @@ thead th {
             linear-gradient(to bottom right, #dce6f9, #f8dcec);
     }
 
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
     .painel2 .topo-bt-painel2 {
         display: flex;
         justify-content: center;
@@ -614,5 +670,22 @@ thead th {
         padding-top: 0px;
         padding-left: 0px;
         scale: 1.0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .caixas-1 .destaque {
+        border-radius: 25px;
+        margin: 44px 0;
+        padding: 40px;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        background: var(--gradiente-borda);
+    }
+
+    .bt-largura {
+        width: unset;
     }
 }
