@@ -16,6 +16,7 @@ window.addEventListener('load', function () {
   });
 })
 
+
 // botao com animacao
 window.addEventListener('load', function () {
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

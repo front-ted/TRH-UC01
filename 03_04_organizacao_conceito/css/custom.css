@@ -247,10 +247,19 @@ body {
     margin-left: 20%;
 }
 
+.game-body .slot {
+    min-height: 150px;
+}
 
-
-
-
+#slots .row,
+#cardPile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    align-content: center;
+}
 
 
 
@@ -439,10 +448,15 @@ body {
     .img-mobile {
         display: none;
     }
+
     .marcador-padrao li {
         background: url('../../assets/images/marcador_padrao.svg') no-repeat left top 3px / 14px;
         list-style: none;
         padding-left: 30px;
+    }
+
+    .game-body .slot {
+        min-height: 150px;
     }
 
 }
@@ -552,6 +566,15 @@ body {
 
     .img-mobile {
         display: block;
+    }
+
+    .game-body .slot .card {
+        color: var(--cor-primaria);
+        background: unset;
+        border-color: unset;
+        border: unset;
+        background-color: #4ba69d;
+        color: #fff;
     }
 }
 

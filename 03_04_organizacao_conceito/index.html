@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="../assets/css/player.css">
     <!--Atividade relacionar colunas-->
     <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../print/print/print.css">
@@ -357,7 +359,8 @@
                     <p>
                         É importante saber que existem possibilidades de enquadramento de porte das empresas, que
                         variam de acordo com cada órgão do Governo Federal, que são: Agência Nacional de Vigilância
-                        Sanitária (<span class="sublinhado">Anvisa</span>), Banco Nacional do Desenvolvimento (BNDES) e Instituto Brasileiro de
+                        Sanitária (<span class="sublinhado">Anvisa</span>), Banco Nacional do Desenvolvimento (BNDES) e
+                        Instituto Brasileiro de
                         Geografia e
                         Estatística (IBGE). Veja, a seguir, os tipos mais usados.
                     </p>
@@ -642,7 +645,7 @@
                     Quanto às classificações, podem ser baseadas no regime de constituição e dissolução ou quanto à
                     responsabilidade dos sócios pelas obrigações sociais.
                 </p>
-                <p class="no-print">Clique ou toque para visualizar o conteúdo.</p> 
+                <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
                 <div class="accordion my-5" id="accordionExample2">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading1">
@@ -1814,7 +1817,7 @@
                     seguir.</p>
                 <div class="no-print">
                     <div class="box-atividade">
-                        <p>Relacione as colunas a seguir de acordo com as respectivas definições. </p>
+                        <p class="mt-5">Relacione as colunas a seguir de acordo com as respectivas definições. </p>
                         <div class="game-associar-colunas no-print nao-imprimir">
                             <div class="row">
                                 <div class="col-12 col-sm-4 flexs itens">
@@ -2454,8 +2457,140 @@
                     otimizam tempo e recursos, por exemplo. Então, de acordo com a leitura anterior, para finalizar este
                     conteúdo, faça o que se pede a seguir.
                 </p>
-                <div class="box-atividade no-print">
-                    <p class="mt-5">Você é responsável por recepcionar um novo funcionário. Para isso, precisa seguir algumas
+                <div class="box-atividade d-none d-lg-block">
+                    <p class="titulo-ativ"><strong>Arrasta e solta</strong></p>
+                    <p class="mt-5">Você é responsável por recepcionar um novo funcionário. Para isso, precisa seguir
+                        algumas
+                        tarefas. Enumere as tarefas de acordo com a ordem de prioridade: </p>
+                    <div id="content-game">
+                        <div class="container-fluid game-body no-print" style="padding:0;">
+                            <div class="row">
+                                <div id="slots" class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>1</p>
+                                            </div>
+                                            <div id="slot-1" class="slot">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>2</p>
+                                            </div>
+                                            <div id="slot-2" class="slot">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>3</p>
+                                            </div>
+                                            <div id="slot-3" class="slot">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>4</p>
+                                            </div>
+                                            <div id="slot-4" class="slot">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="cardPile" class="game-itens-container">
+                                    <div id="card-1" class="card" data-target="slot-1">
+                                        <p>Assinatura de contratos e documentos e entrega de crachá e uniforme </p>
+                                    </div>
+
+                                    <div id="card-2" class="card" data-target="slot-2">
+                                        <p>Cadastramento biométrico no sistema de relógio de ponto </p>
+                                    </div>
+
+                                    <div id="card-3" class="card" data-target="slot-3">
+                                        <p>Apresentação do ambiente de trabalho </p>
+                                    </div>
+
+                                    <div id="card-4" class="card" data-target="slot-4">
+                                        <p>Apresentação da empresa, expondo missão, visão, valores e cultura organizacional
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i>
+                                        Resposta correta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/arrasta_solta/resposta_pos.svg"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Muito bem! Você acertou.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Resposta
+                                        incorreta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/arrasta_solta/resposta_neg.svg"
+                                                class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Ops, tente novamente!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <div class="box-atividade no-print">
+                    <p class="mt-5">Você é responsável por recepcionar um novo funcionário. Para isso, precisa seguir
+                        algumas
                         tarefas. Enumere as tarefas de acordo com a ordem de prioridade: </p>
                     <div class="game-associar-colunas02 no-print nao-imprimir">
                         <div class="row">
@@ -2497,11 +2632,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="no-print">
-                    <!-- Modal Acertou 1 -->
-                    <div id="modal_acertou_1" class="modal fade" tabindex="-1">
+                <!-- <div class="no-print"> -->
+                <!-- Modal Acertou 1 -->
+                <!-- <div id="modal_acertou_1" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -2525,11 +2660,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <!-- Modal Acertou 2 -->
-                    <div id="modal_acertou_2" class="modal fade" tabindex="-1">
+                <!-- Modal Acertou 2 -->
+                <!-- <div id="modal_acertou_2" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -2556,10 +2691,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- Modal Acertou 3 -->
-                    <div id="modal_acertou_3" class="modal fade" tabindex="-1">
+                <!-- Modal Acertou 3 -->
+                <!-- <div id="modal_acertou_3" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -2584,11 +2719,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <!-- Modal Acertou 4 -->
-                    <div id="modal_acertou_4" class="modal fade" tabindex="-1">
+                <!-- Modal Acertou 4 -->
+                <!-- <div id="modal_acertou_4" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -2622,11 +2757,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <!-- Modal Errou 1 -->
-                    <div id="modal_errou_1" class="modal fade" tabindex="-1">
+                <!-- Modal Errou 1 -->
+                <!-- <div id="modal_errou_1" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger">
@@ -2649,10 +2784,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- Modal Errou 2 -->
-                    <div id="modal_errou_2" class="modal fade" tabindex="-1">
+                <!-- Modal Errou 2 -->
+                <!-- <div id="modal_errou_2" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger">
@@ -2676,10 +2811,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- Modal Errou 3 -->
-                    <div id="modal_errou_3" class="modal fade" tabindex="-1">
+                <!-- Modal Errou 3 -->
+                <!-- <div id="modal_errou_3" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger">
@@ -2704,10 +2839,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- Modal Errou 4 -->
-                    <div id="modal_errou_4" class="modal fade" tabindex="-1">
+                <!-- Modal Errou 4 -->
+                <!-- <div id="modal_errou_4" class="modal fade" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-danger">
@@ -2737,7 +2872,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <h3 id="titulo14">Encerramento</h3>
                 <p>
@@ -2779,6 +2914,9 @@
     <script src="../assets/js/splide.min.js"></script>
     <!--Prog'n'roll - barra de progresso conforme rola a página-->
     <script src="../assets/js/prognroll.min.js"></script>
+    <!--Atividade arrasta e solta-->
+    <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
+    <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
     <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>

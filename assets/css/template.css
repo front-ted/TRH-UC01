@@ -269,6 +269,7 @@ tbody td:first-child{border-left: 0;}
 .botao::before{
     border-radius: 30px;
 }
+
 .check.visitado::after{
     background: url('../images/check.svg') no-repeat;
     height: 30px;
