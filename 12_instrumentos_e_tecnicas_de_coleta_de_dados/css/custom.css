@@ -229,6 +229,10 @@ span h5 {
     margin-bottom: 100px !important;
 }
 
+.tachado{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
     .painel1 {
         scale: 0.8;
