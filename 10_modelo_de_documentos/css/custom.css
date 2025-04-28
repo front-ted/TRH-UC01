@@ -36,6 +36,16 @@ body {
     right: 66px;
 }
 
+.bt-painel1.check.visitado::after {
+    background: url('../../assets/images/check.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    content: '';
+}
+
 .bt2-painel1 {
     width: 198px;
     height: 118px;
@@ -136,6 +146,66 @@ thead th {
 }
 
 /* FIM TABELAS */
+.modal-body .grafismo::after {
+    content: '';
+    display: block;
+    height: 211px;
+    width: 211px;
+    bottom: -50px;
+    right: -36px;
+    position: absolute;
+}
+
+.bt-largura {
+    width: 400px;
+    text-decoration: none;
+}
+
+.bt-largura2 {
+    width: 282px;
+    text-decoration: none;
+}
+
+.bt-largura3 {
+    width: 250px;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.bt-pdf::after {
+    content: '';
+    position: absolute;
+    background: url('../../assets/images/ico_pdf.svg') no-repeat;
+    height: 87px;
+    width: 87px;
+    left: -20px;
+    top: -3px;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    body {
+        background:
+            none,
+            none,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .painel1 {
         display: flex;
@@ -154,17 +224,19 @@ thead th {
         position: unset;
     }
 
-    body {
-        background:
-            none,
-            none,
-            linear-gradient(to bottom right, #dce6f9, #f8dcec);
-    }
 
     .modal-body {
         background:
             none,
             none,
             linear-gradient(to bottom right, #dce6f9, #f8dcec);
+    }
+
+    .item p {
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-size: 16px;
     }
 }
