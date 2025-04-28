@@ -206,8 +206,7 @@
 }
 
 .tachado {
-  text-decoration-line:underline;
-  text-decoration-style: dashed;
+  text-decoration: line-through;
 }
 
 .citacao {
@@ -990,4 +989,3 @@ ol[type="a"] li {
   border: #000 2px solid;
   padding: 2%;
 }
-

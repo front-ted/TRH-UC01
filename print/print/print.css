@@ -509,8 +509,7 @@
   }
 
   .tachado {
-    text-decoration-line:underline;
-    text-decoration-style: dashed;
+    text-decoration: line-through;
 }
 
   .citacao {
