@@ -31,7 +31,7 @@ body {
 .bt1-painel1 {
     width: 186px;
     height: 131px;
-    background: url(../img/bt01.png);
+    background: url('../img/bt01.png');
     top: -160px;
     right: 66px;
 }
@@ -74,9 +74,6 @@ body {
     background: url(../img/bt03b.png);
 }
 
-.bt-painel1:hover {
-    transform: scale(1.1);
-}
 
 .modal-body {
     background: url('../img/asset04.png') 100% 10%,
@@ -197,9 +194,23 @@ thead th {
 }
 
 
+@media screen and (max-width: 820px) {
+    .bt1-painel1 {
+        top: -171px;
+        right: 36px;
+    }
 
+    .bt2-painel1 {
+        top: -98px;
+        right: 71px;
+    }
 
+    .bt3-painel1 {
+        top: -168px;
+        right: -26px;
+    }
 
+}
 
 
 
@@ -207,23 +218,20 @@ thead th {
 
 
 @media screen and (max-width: 768px) {
-    .painel1 {
-        display: flex;
-        scale: 1.0;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        background: none;
-        height: 330px;
-        margin-top: 35px;
-        margin-bottom: 60px;
+    .bt1-painel1 {
+        top: -171px;
+        right: 36px;
     }
 
-    .bt-painel1 {
-        position: unset;
+    .bt2-painel1 {
+        top: -98px;
+        right: 71px;
     }
 
+    .bt3-painel1 {
+        top: -168px;
+        right: -26px;
+    }
 
     .modal-body {
         background:
@@ -238,5 +246,98 @@ thead th {
         padding: 0px;
         margin: 0px;
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .painel1 {
+        transform: scale(0.45);
+        width: 798px;
+        height: 359px;
+        margin-left: -72% !important;
+        margin-top: 6%;
+        margin-bottom: -20%;
+    }
+
+    .bt1-painel1 {
+        top: -69%;
+        right: 8%;
+        transform: scale(1.5);
+    }
+
+    .bt2-painel1 {
+        top: -56%;
+        right: 1%;
+        transform: scale(1.5);
+    }
+
+    .bt3-painel1 {
+        top: -66%;
+        right: -17%;
+        transform: scale(1.5);
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .painel1 {
+        transform: scale(0.45);
+        width: 798px;
+        height: 359px;
+        margin-left: -61% !important;
+        margin-top: 6%;
+        margin-bottom: -20%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .painel1 {
+        transform: scale(0.45);
+        width: 798px;
+        height: 359px;
+        margin-left: -66% !important;
+        margin-top: 6%;
+        margin-bottom: -20%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .painel1 {
+        transform: scale(0.43);
+        width: 798px;
+        height: 359px;
+        margin-left: -76% !important;
+        margin-top: 6%;
+        margin-bottom: -20%;
+    }
+
+    .bt1-painel1 {
+        top: -69%;
+        right: 8%;
+        transform: scale(1.5);
+    }
+
+    .bt2-painel1 {
+        top: -56%;
+        right: 1%;
+        transform: scale(1.5);
+    }
+
+    .bt3-painel1 {
+        top: -66%;
+        right: -17%;
+        transform: scale(1.5);
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .painel1 {
+        transform: scale(0.4);
+        width: 798px;
+        height: 359px;
+        margin-left: -80% !important;
+        margin-top: 6%;
+        margin-bottom: -20%;
     }
 }
