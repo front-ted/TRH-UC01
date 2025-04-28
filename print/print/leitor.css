@@ -981,6 +981,12 @@ ol[type="a"] li {
 }
 
 .margem-esq {
-  margin-left: 18%;
+  margin-left: 13%;
   width: 190px;
 }
+
+.borda-ficha {
+  border: #000 2px solid;
+  padding: 2%;
+}
+
