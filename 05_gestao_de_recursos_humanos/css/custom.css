@@ -118,7 +118,14 @@ body {
 
 .game-body .slot {
     min-height: 150px;
+    transition: min-height 0.3s ease;
 }
+
+.game-body .slot.full {
+    min-height: 555px;
+}
+
+
 
 .bg-escuro .destaque-bg p {
     color: #fff;
@@ -223,7 +230,8 @@ body {
         background-position: center;
         box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
     }
-    .img-mobile{
+
+    .img-mobile {
         display: none;
     }
 }

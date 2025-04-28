@@ -248,7 +248,7 @@ body {
 }
 
 .game-body .slot {
-    min-height: 150px;
+    min-height: 225px;
 }
 
 #slots .row,
@@ -260,7 +260,6 @@ body {
     margin: 25px 0;
     align-content: center;
 }
-
 
 
 
@@ -569,12 +568,12 @@ body {
     }
 
     .game-body .slot .card {
-        color: var(--cor-primaria);
-        background: unset;
-        border-color: unset;
-        border: unset;
-        background-color: #4ba69d;
-        color: #fff;
+        color: #fff !important;
+        background: #4ba69d !important;
+        border-color: #4ba69d;
+        display: block;
+        width: 190px;
+        margin: auto;
     }
 }
 
