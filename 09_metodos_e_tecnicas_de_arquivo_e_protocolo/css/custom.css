@@ -20,7 +20,7 @@
     color: #ffffff;
 }
 
-.bg-escuro .bloco1 {
+.bloco1 {
     background: url(../img/asset01.png) 0% 110%,
         url(../img/asset02.png) 100% 50%,
         url(../img/asset03.png) 0% 210%,
