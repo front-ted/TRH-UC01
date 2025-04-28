@@ -203,6 +203,10 @@ dragula([
 	document.getElementById('13'),
 	document.getElementById('14'),
 	document.getElementById('15'),
+	document.getElementById('16'),
+	document.getElementById('17'),
+	document.getElementById('18'),
+	document.getElementById('19'),
 ])
 
 .on('drag', function(el) {
