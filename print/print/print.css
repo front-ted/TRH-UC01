@@ -512,4 +512,10 @@
     margin-left: 18%;
     width: 190px;
   }
+  .tachado{
+    text-decoration: underline;
+}
+.citacao {
+  margin-left: 4%;
+}
 }

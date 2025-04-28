@@ -16,4 +16,9 @@ h5 {
     font-family: figtree-bold !important;
 }
 
+body {
+    background:
+        linear-gradient(to bottom right, #dce6f9, #f8dcec) fixed;
+}
+
 @media screen and (max-width: 980px) {}

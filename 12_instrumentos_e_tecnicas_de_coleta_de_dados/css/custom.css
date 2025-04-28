@@ -229,9 +229,46 @@ span h5 {
     margin-bottom: 100px !important;
 }
 
-.tachado{
+.slide-novo .card .card-body {
+    position: absolute;
+    bottom: 0px;
+    background: #fff;
+    width: calc(100% - 20px);
+    border: none;
+    left: 10px;
+    border-radius: 0 0 40px 40px;
+    color: #000;
+}
+
+
+
+.tachado {
     text-decoration: underline;
 }
+
+.game-body .slot {
+    min-height: 150px;
+}
+
+#slots .row,
+#cardPile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    align-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        background: url('../img/asset01.png') 100% 10%,
+            url('../img/asset02.png') 0% 70%,
+            linear-gradient(to bottom right, #dce6f9, #f8dcec) fixed;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     .painel1 {
@@ -239,15 +276,37 @@ span h5 {
         margin-top: -80px;
         margin-bottom: -50px;
     }
+
+    body {
+        background:
+            linear-gradient(to bottom, #dce6f9, #f8dcec);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .game-body .slot {
+        min-height: 150px;
+    }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 5px;
+        width: 136px;
+    }
+
+    .painel1 {
+        scale: 0.65;
+        margin-top: -200px;
+        margin-bottom: -185px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background:
-            none,
-            none,
-            linear-gradient(to bottom right, #dce6f9, #f8dcec);
-    }
+
 
     .painel1 {
         scale: 0.6;
@@ -480,6 +539,31 @@ span h5 {
         padding: 10px;
         width: 90%;
         display: block;
+        color: #000;
+    }
+
+    .game-body .slot .card {
+        color: var(--cor-primaria);
+        background: unset;
+        border-color: unset;
+        border: unset;
+        background-color: #4ba69d;
+        color: #fff;
+    }
+
+    .slide-novo .card .card-body p {
+        color: #000 !important;
+        font-size: 0.6em;
+    }
+
+    .slide-novo .card .card-body {
+        position: absolute;
+        bottom: -15%;
+        background: #fff;
+        width: calc(100% - 20px);
+        border: none;
+        left: 10px;
+        border-radius: 5px;
         color: #000;
     }
 }

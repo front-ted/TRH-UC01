@@ -78,34 +78,96 @@
                     matéria-prima de uma informação, mas que têm pouco valor além de sua existência.</p>
                 <p>A classificação se dá da seguinte forma:</p>
                 <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                <div class="row mb-5 no-print" aria-hidden="true">
-                    <div class="col-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="alfanumericos-list"
-                                data-bs-toggle="list" href="#alfanumericos" role="tab"
-                                aria-controls="alfanumericos">Dados alfanuméricos</a>
-                            <a class="list-group-item list-group-item-action" id="audio-list" data-bs-toggle="list"
-                                href="#audio" role="tab" aria-controls="audio">Dados de áudio</a>
-                            <a class="list-group-item list-group-item-action" id="imagem-list" data-bs-toggle="list"
-                                href="#imagem" role="tab" aria-controls="imagem">Dados de imagem</a>
-                            <a class="list-group-item list-group-item-action" id="video-list" data-bs-toggle="list"
-                                href="#video" role="tab" aria-controls="video">Dados de vídeo</a>
+                <div class="d-none d-sm-block no-print">
+                    <div class="row mb-5 no-print" aria-hidden="true">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="alfanumericos-list"
+                                    data-bs-toggle="list" href="#alfanumericos" role="tab"
+                                    aria-controls="alfanumericos">Dados alfanuméricos</a>
+                                <a class="list-group-item list-group-item-action" id="audio-list" data-bs-toggle="list"
+                                    href="#audio" role="tab" aria-controls="audio">Dados de áudio</a>
+                                <a class="list-group-item list-group-item-action" id="imagem-list" data-bs-toggle="list"
+                                    href="#imagem" role="tab" aria-controls="imagem">Dados de imagem</a>
+                                <a class="list-group-item list-group-item-action" id="video-list" data-bs-toggle="list"
+                                    href="#video" role="tab" aria-controls="video">Dados de vídeo</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="alfanumericos" role="tabpanel"
+                                    aria-labelledby="alfanumericos-list">
+                                    <p>São representados por letras, números, cores, sinais e outros caracteres.</p>
+                                </div>
+                                <div class="tab-pane fade" id="audio" role="tabpanel" aria-labelledby="audio-list">
+                                    <p>São os diferentes sons, ruídos e tons que podem ser ouvidos.</p>
+                                </div>
+                                <div class="tab-pane fade" id="imagem" role="tabpanel" aria-labelledby="imagem-list">
+                                    <p>São as imagens e fotografias que podem ser vistas.</p>
+                                </div>
+                                <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-list">
+                                    <p>São imagens em movimento.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-8">
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="alfanumericos" role="tabpanel"
-                                aria-labelledby="alfanumericos-list">
-                                <p>São representados por letras, números, cores, sinais e outros caracteres.</p>
+                </div>
+                <div class="d-block d-sm-none no-print">
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading10">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    Dados alfanuméricos
+                                </button>
+                            </h2>
+                            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p>São representados por letras, números, cores, sinais e outros caracteres.</p>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="audio" role="tabpanel" aria-labelledby="audio-list">
-                                <p>São os diferentes sons, ruídos e tons que podem ser ouvidos.</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading11">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    Dados de áudio
+                                </button>
+                            </h2>
+                            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p>São os diferentes sons, ruídos e tons que podem ser ouvidos.</p>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="imagem" role="tabpanel" aria-labelledby="imagem-list">
-                                <p>São as imagens e fotografias que podem ser vistas.</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading12">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                    Dados de imagem
+                                </button>
+                            </h2>
+                            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p>São as imagens e fotografias que podem ser vistas.</p>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-list">
-                                <p>São imagens em movimento.</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading13">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                    Dados de vídeo
+                                </button>
+                            </h2>
+                            <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p>São imagens em movimento.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,7 +198,7 @@
                     <li><b>Segura</b>: quando pode ser acessada somente por usuários autorizados.</li>
                 </ul>
                 <figure class="my-5">
-                    <img src="img/img01.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                    <img src="img/img01.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print img-maior"
                         alt="Imagem">
                     <a href="img/img01.png" target="_blank" class="img-zoom d-block d-md-none no-print">
                         <img src="img/img01.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
@@ -607,7 +669,7 @@
                         informação</b>. </p>
                 <p>Todo sistema é constituído por quatro componentes básicos:</p>
                 <figure class="my-5" aria-hidden="true">
-                    <img src="img/img02.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                    <img src="img/img02.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print img-maior"
                         alt="Imagem">
                     <a href="img/img02.png" target="_blank" class="img-zoom d-block d-md-none no-print">
                         <img src="img/img02.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
@@ -665,7 +727,7 @@
                     em
                     linhas, colunas e células.</p>
                 <figure class="my-5">
-                    <img src="img/img03.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                    <img src="img/img03.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print img-maior"
                         alt="Imagem">
                     <a href="img/img03.png" target="_blank" class="img-zoom d-block d-md-none no-print">
                         <img src="img/img03.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
@@ -681,7 +743,7 @@
                 <p>São dados ou valores numéricos representados visualmente para facilitar sua compreensão. Os tipos de
                     gráficos mais utilizados são os de colunas, barras e linhas e os circulares (em <i>pizza</i>). </p>
                 <figure class="my-5">
-                    <img src="img/img04.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print"
+                    <img src="img/img04.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print img-maior"
                         alt="Imagem">
                     <a href="img/img04.png" target="_blank" class="img-zoom d-block d-md-none no-print">
                         <img src="img/img04.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
@@ -703,7 +765,8 @@
                             Para saber mais, acesse o tutorial a seguir de como criar um gráfico no Microsoft Excel.</p>
                     </div>
                 </div>
-                <p class="no-print" aria-hidden="true">Clique ou toque nas setas para visualizar o conteúdo.</p>
+                <p class="no-print" aria-hidden="true">Clique ou toque nas setas e nas imagens para visualizar o
+                    conteúdo. </p>
                 <div class="container-fluid no-print slide-novo" aria-hidden="true">
                     <div class="splide" role="group">
                         <div class="splide__track">
@@ -716,7 +779,7 @@
                                             <img src="img/slide01.png" class="img-fluid" alt="Imagem">
                                         </a>
                                         <div class="card-body">
-                                            <p class="card-text d-none d-md-block"><b>Passo 1:</b> crie uma tabela com
+                                            <p class="card-text"><b>Passo 1:</b> crie uma tabela com
                                                 os dados que você
                                                 quer visualizar no gráfico. Ex.: fazer um
                                                 comparativo
@@ -732,7 +795,7 @@
                                             <img src="img/slide02.png" class="img-fluid" alt="Imagem">
                                         </a>
                                         <div class="card-body">
-                                            <p class="card-text d-none d-md-block"><b>Passo 2:</b> acesse a fonte de
+                                            <p class="card-text"><b>Passo 2:</b> acesse a fonte de
                                                 dados e clique em
                                                 qualquer parte na área da fonte.</p>
                                         </div>
@@ -746,9 +809,9 @@
                                             <img src="img/slide03.png" class="img-fluid" alt="Imagem">
                                         </a>
                                         <div class="card-body">
-                                            <p class="card-text d-none d-md-block"><b>Passo 3:</b> clique na aba
-                                                <b>Inserir</b>, no grupo
-                                                <b>Tabelas</b>, e na seta para baixo para
+                                            <p class="card-text"><b>Passo 3:</b> clique na aba
+                                                <b>"Inserir"</b>, no grupo
+                                                <b>"Tabelas"</b>, e na seta para baixo para
                                                 visualizar todos os
                                                 tipos de tabelas disponíveis.
                                             </p>
@@ -763,9 +826,9 @@
                                             <img src="img/slide04.png" class="img-fluid" alt="Imagem">
                                         </a>
                                         <div class="card-body">
-                                            <p class="card-text d-none d-md-block"><b>Passo 4:</b> selecione o tipo de
+                                            <p class="card-text"><b>Passo 4:</b> selecione o tipo de
                                                 tabela que você
-                                                achar mais adequado e clique em <b>OK</b>.</p>
+                                                achar mais adequado e clique em <b>"OK"</b>.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -777,7 +840,7 @@
                                             <img src="img/slide05.png" class="img-fluid" alt="Imagem">
                                         </a>
                                         <div class="card-body">
-                                            <p class="card-text d-none d-md-block"><b>Passo 5:</b> clique duas vezes
+                                            <p class="card-text"><b>Passo 5:</b> clique duas vezes
                                                 sobre o título da
                                                 tabela para inserir um novo título.</p>
                                         </div>
@@ -790,7 +853,7 @@
                 <div class="visually-hidden print">
                     <figure class="my-5">
                         <div class="figure-img">
-                            <img class="img-fluid d-block mx-auto mb-4 print" src="img/slide01.png">
+                            <img class="img-fluid d-block mx-auto mb-4 print img-maior" src="img/slide01.png">
                         </div>
                     </figure>
                     <p><b>Passo 1:</b> crie uma tabela com os dados que você quer visualizar no gráfico. Ex.: fazer um
@@ -798,13 +861,13 @@
                         entre as contratações e as demissões do primeiro semestre de 2016.</p>
                     <figure class="my-5">
                         <div class="figure-img">
-                            <img class="img-fluid d-block mx-auto mb-4 print" src="img/slide02.png">
+                            <img class="img-fluid d-block mx-auto mb-4 print img-maior" src="img/slide02.png">
                         </div>
                     </figure>
                     <p><b>Passo 2:</b> acesse a fonte de dados e clique em qualquer parte na área da fonte.</p>
                     <figure class="my-5">
                         <div class="figure-img">
-                            <img class="img-fluid d-block mx-auto mb-4 print" src="img/slide03.png">
+                            <img class="img-fluid d-block mx-auto mb-4 print img-maior" src="img/slide03.png">
                         </div>
                     </figure>
                     <p><b>Passo 3:</b> clique na aba <b>Inserir</b>, no grupo <b>Tabelas</b>, e na seta para baixo para
@@ -812,14 +875,14 @@
                         tipos de tabelas disponíveis.</p>
                     <figure class="my-5">
                         <div class="figure-img">
-                            <img class="img-fluid d-block mx-auto mb-4 print" src="img/slide04.png">
+                            <img class="img-fluid d-block mx-auto mb-4 print img-maior" src="img/slide04.png">
                         </div>
                     </figure>
                     <p><b>Passo 4:</b> selecione o tipo de tabela que você achar mais adequado e clique em <b>OK</b>.
                     </p>
                     <figure class="my-5">
                         <div class="figure-img">
-                            <img class="img-fluid d-block mx-auto mb-4 print" src="img/slide05.png">
+                            <img class="img-fluid d-block mx-auto mb-4 print img-maior" src="img/slide05.png">
                         </div>
                     </figure>
                     <p><b>Passo 5:</b> clique duas vezes sobre o título da tabela para inserir um novo título.</p>
@@ -1135,8 +1198,7 @@
                     pagamentos, controle e mapeamento de competências, entre outras atividades pertinentes ao setor.</p>
                 <p class="no-print">Agora, teste seus conhecimentos.</p>
                 <div class="box-atividade no-print">
-                    <p class="titulo-ativ"><strong>Relacionar colunas</strong></p>
-                    <p>Relacione o instrumento de coleta de dados à sua respectiva definição.</p>
+                    <p class="mt-5">Relacione o instrumento de coleta de dados à sua respectiva definição.</p>
                     <div class="game-associar-colunas no-print nao-imprimir">
                         <div class="row">
                             <div class="col-12 col-sm-4 flexs itens">

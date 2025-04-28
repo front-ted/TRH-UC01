@@ -205,6 +205,13 @@
   max-width: 100% !important;
 }
 
+.tachado {
+  text-decoration: underline;
+}
+
+.citacao {
+  margin-left: 4%;
+}
 
 .pagina legend {
   display: block;
