@@ -241,10 +241,11 @@ span h5 {
 }
 
 
-
 .tachado {
-    text-decoration: underline;
+    text-decoration-line:underline;
+    text-decoration-style: dashed;
 }
+
 
 .game-body .slot {
     min-height: 150px;

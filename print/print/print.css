@@ -509,8 +509,9 @@
   }
 
   .tachado {
-    text-decoration: underline;
-  }
+    text-decoration-line:underline;
+    text-decoration-style: dashed;
+}
 
   .citacao {
     margin-left: 4%;
