@@ -548,7 +548,7 @@ thead th {
     width: 400px;
     text-decoration: none;
 }
- 
+
 
 
 
@@ -599,7 +599,10 @@ thead th {
             linear-gradient(to bottom right, #dce6f9, #f8dcec);
     }
 
-
+    table {
+        background-color: #fff;
+        table-layout: auto;
+    }
 }
 
 
