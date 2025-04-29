@@ -425,6 +425,7 @@ span h5 {
         display: block;
         color: #000;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -669,5 +670,9 @@ span h5 {
         width: 90%;
         display: block;
         color: #000;
+    }
+    .flip-card{
+        transform: scale(0.9);
+        margin-left: -5%;
     }
 }
